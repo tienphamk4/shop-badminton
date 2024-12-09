@@ -1,0 +1,66 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng kí</title>
+    <!-- css -->
+    <link rel="stylesheet" href="asset/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/reset.css">
+    <link rel="stylesheet" href="asset/css/base.css">
+    <link rel="stylesheet" href="asset/css/login.css">
+</head>
+
+<body>
+    <div class="login">
+        <form action="" id="register-form">
+            <div class="wrapper">
+                <div class="form-group">
+                    <label for="name" class="">Họ và tên</label>
+                    <input type="name" id="name" name="name" class="form-control">
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="">Email</label>
+                    <input type="email" id="email" name="email" class="form-control">
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mật khẩu</label>
+                    <input type="password" id="password" name="password" class="form-control">
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Nhập lại mật khẩu </label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" class="form-control">
+                    <span class="form-message"></span>
+                </div>
+                <button type="submit" class="btn">Đăng kí</button>
+                <div class="register">
+                    <a href="login.html">Bạn đã có tài khoản? Đăng nhập</a>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+
+
+
+</body>
+<script src="asset/js/validator.js"></script>
+<script>
+    var option = {
+        form_id: '#register-form',
+        rules: [
+            validator.isEmail('#email'),
+            validator.isRequired('#password', 'mật khẩu'),
+            validator.isRequired('#name', 'họ tên'),
+            validator.checkPasswordConfirm('#confirmPassword')
+
+        ]
+    }
+    validator(option)
+</script>
+
+</html>

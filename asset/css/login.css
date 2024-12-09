@@ -1,0 +1,47 @@
+body{
+    background: url(/asset/img/bg.png) no-repeat;
+    background-size: cover;
+}
+.login{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login form{
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 400px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+}
+.login .wrapper{
+    width: 100%;
+}
+.login button{
+    background:var(--main-color);
+    color:#fff;
+    font-weight: 500;
+    width: 100%;
+}
+.login div.register{
+    margin-top: 20px;
+}
+.login a{
+    color:var(--main-color)
+}
+.invalid{
+    border:1px solid red;
+}
+.form-message{
+    color:red;
+}
+
+#register-form{
+    height: 500px;
+
+}
