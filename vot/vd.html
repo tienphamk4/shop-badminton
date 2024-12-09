@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop VNB - Vợt Cầu Lông</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="bg-primary text-white py-3">
+        <div class="container">
+            <h1 class="h4">Shop VNB - Vợt Cầu Lông</h1>
+        </div>
+    </header>
+
+    <!-- Main Layout -->
+    <div class="container my-4">
+        <div class="row">
+            <!-- Sidebar -->
+            <aside class="col-md-3">
+                <div class="bg-light p-3 rounded shadow-sm">
+                    <h5 class="mb-3">Lọc sản phẩm</h5>
+                    <form>
+                        <!-- Lọc theo giá -->
+                        <div class="mb-3">
+                            <label class="form-label">Khoảng giá</label>
+                            <select class="form-select">
+                                <option value="all" selected>Tất cả</option>
+                                <option value="under-1m">Dưới 1 triệu</option>
+                                <option value="1m-3m">1 triệu - 3 triệu</option>
+                                <option value="above-3m">Trên 3 triệu</option>
+                            </select>
+                        </div>
+
+                        <!-- Lọc theo thương hiệu -->
+                        <div class="mb-3">
+                            <label class="form-label">Thương hiệu</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="yonex" id="brandYonex">
+                                <label class="form-check-label" for="brandYonex">Yonex</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="lining" id="brandLining">
+                                <label class="form-check-label" for="brandLining">Li-Ning</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="victor" id="brandVictor">
+                                <label class="form-check-label" for="brandVictor">Victor</label>
+                            </div>
+                        </div>
+
+                        <!-- Lọc theo chiều dài vợt -->
+                        <div class="mb-3">
+                            <label class="form-label">Chiều dài vợt</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="short" id="lengthShort">
+                                <label class="form-check-label" for="lengthShort">Dưới 665mm</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="medium" id="lengthMedium">
+                                <label class="form-check-label" for="lengthMedium">665mm - 675mm</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="long" id="lengthLong">
+                                <label class="form-check-label" for="lengthLong">Trên 675mm</label>
+                            </div>
+                        </div>
+
+                        <!-- Lọc theo chiều dài cán vợt -->
+                        <div class="mb-3">
+                            <label class="form-label">Chiều dài cán vợt</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="handleShort" id="handleShort">
+                                <label class="form-check-label" for="handleShort">200 mm</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="handleMedium" id="handleMedium">
+                                <label class="form-check-label" for="handleMedium">205 mm</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="handleLong" id="handleLong">
+                                <label class="form-check-label" for="handleLong">210 mm</label>
+                            </div>
+                        </div>
+
+                        <!-- Lọc theo trọng lượng -->
+                        <div class="mb-3">
+                            <label class="form-label">Trọng lượng vợt</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="light" id="weightLight">
+                                <label class="form-check-label" for="weightLight">Nhẹ (3U)</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="medium" id="weightMedium">
+                                <label class="form-check-label" for="weightMedium">Trung bình (4U)</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="heavy" id="weightHeavy">
+                                <label class="form-check-label" for="weightHeavy">Nặng (5U)</label>
+                            </div>
+                        </div>
+
+                        <!-- Lọc theo trình độ -->
+                        <div class="mb-3">
+                            <label class="form-label">Trình độ</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="beginner" id="levelBeginner">
+                                <label class="form-check-label" for="levelBeginner">Mới bắt đầu</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="intermediate"
+                                    id="levelIntermediate">
+                                <label class="form-check-label" for="levelIntermediate">Trung cấp</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="advanced" id="levelAdvanced">
+                                <label class="form-check-label" for="levelAdvanced">Nâng cao</label>
+                            </div>
+                        </div>
+
+                        <!-- Lọc theo phong cách chơi -->
+                        <div class="mb-3">
+                            <label class="form-label">Phong cách chơi</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="attacking" id="styleAttacking">
+                                <label class="form-check-label" for="styleAttacking">Tấn công</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="defensive" id="styleDefensive">
+                                <label class="form-check-label" for="styleDefensive">Phòng thủ</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="allround" id="styleAllround">
+                                <label class="form-check-label" for="styleAllround">Cân bằng</label>
+                            </div>
+                        </div>
+
+                        <!-- Nút áp dụng -->
+                        <button type="submit" class="btn btn-primary w-100">Áp dụng</button>
+                    </form>
+                </div>
+            </aside>
+
+
+            <!-- Product List -->
+            <section class="col-md-9">
+                <div class="row">
+                    <!-- Card Sản phẩm -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 position-relative">
+                            <img src="../assets/images/mizuno.png" class="card-img-top" alt="Vợt cầu lông">
+                            <div class="card-body text-center">
+                                <span class="premium-badge">Premium</span>
+                                <h5 class="card-title">Vợt Yonex Astrox 99</h5>
+                                <p class="card-text">Giá: 2,500,000 VNĐ</p>
+                                <button class="btn btn-primary btn-sm">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 position-relative">
+                            <img src="../assets/images/mizuno.png" class="card-img-top" alt="Vợt cầu lông">
+                            <div class="card-body text-center">
+                                <span class="premium-badge">Premium</span>
+                                <h5 class="card-title">Vợt Yonex Astrox 99</h5>
+                                <p class="card-text">Giá: 2,500,000 VNĐ</p>
+                                <button class="btn btn-primary btn-sm">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 position-relative">
+                            <img src="../assets/images/mizuno.png" class="card-img-top" alt="Vợt cầu lông">
+                            <div class="card-body text-center">
+                                <span class="premium-badge">Premium</span>
+                                <h5 class="card-title">Vợt Yonex Astrox 99</h5>
+                                <p class="card-text">Giá: 2,500,000 VNĐ</p>
+                                <button class="btn btn-primary btn-sm">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="../assets/images/mizuno.png" class="card-img-top" alt="Vợt cầu lông">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Vợt Yonex Astrox 99</h5>
+                                <p class="card-text">Giá: 2,500,000 VNĐ</p>
+                                <button class="btn btn-primary btn-sm">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="../assets/images/mizuno.png" class="card-img-top" alt="Vợt cầu lông">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Vợt Yonex Astrox 99</h5>
+                                <p class="card-text">Giá: 2,500,000 VNĐ</p>
+                                <button class="btn btn-primary btn-sm">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="../assets/images/mizuno.png" class="card-img-top" alt="Vợt cầu lông">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Vợt Yonex Astrox 99</h5>
+                                <p class="card-text">Giá: 2,500,000 VNĐ</p>
+                                <button class="btn btn-primary btn-sm">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add other product cards here... -->
+                </div>
+
+                <!-- Pagination -->
+                <nav>
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1">«</a>
+                        </li>
+                        <li class="page-item active" aria-current="page">
+                            <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="page2.html">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="page3.html">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="page4.html">4</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="page4.html">»</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+    </div>
+
+    <div class="fixed-icons">
+        <!-- Icon Zalo -->
+        <a href="https://zalo.me/your-zalo-link" target="_blank" class="fixed-icon">
+            <img src="../assets/images/zalo.png" alt="Zalo" class="icon">
+        </a>
+
+        <!-- Icon Giỏ Hàng -->
+        <a href="#" class="fixed-icon">
+            <img src="../assets/images/giohang.png" alt="Giỏ Hàng" class="icon">
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            &copy; 2024 Shop VNB - All Rights Reserved
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
