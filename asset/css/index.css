@@ -1,6 +1,7 @@
 /* section-1 */
 .section-1{
     margin: 100px 0;
+    margin-top: 60px;
 }
 .section-1 .row{
     background: #eeeeee;
@@ -38,6 +39,9 @@
     }
     .section-1 .image{
         width: 100%;
+    }
+    .section-1{
+        margin-top: 0;
     }
 }
 
@@ -195,7 +199,9 @@
 .blog p{
     margin-bottom: 50px;
     margin-top: 20px;
-
+}
+.blog img{
+    height: 100%;
 }
 .blog .read{
     display: block;
