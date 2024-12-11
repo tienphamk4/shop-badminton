@@ -6,6 +6,8 @@
 .menu{
     background: var(--main-color);
     width: 100%;
+    position: relative;
+    z-index: 1000;
 }
 
 
@@ -37,7 +39,7 @@
     position: absolute;
     top:100%;
     z-index: 10;
-
+    background: #fff;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     padding: 10px;
 }

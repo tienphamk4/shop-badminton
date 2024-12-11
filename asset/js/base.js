@@ -5,6 +5,8 @@ dropdowns.forEach(item => {
 
     prev.addEventListener('mouseover', function () {
         item.classList.remove('hide')
+        console.log("ok");
+
     })
     console.log(prev.parentElement);
 
