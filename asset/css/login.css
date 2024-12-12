@@ -1,5 +1,5 @@
 body{
-
+    background:beige
 }
 .login{
     height: 100%;
@@ -14,7 +14,7 @@ body{
     border: 1px solid #ddd;
     padding: 20px;
     width: 400px;
-    height: 350px;
+    height: 500px;
     display: flex;
     align-items: center;
 }
@@ -22,13 +22,35 @@ body{
     width: 100%;
 }
 .login button{
-    background:var(--main-color);
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--main-color);
+    border: 1px solid var(--main-color);
     color:#fff;
-    font-weight: 500;
-    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 0 auto;
+}
+.login button i{
+    font-size: 20px;
+}
+.login button:hover{
+    background: #fff;
+    color:var(--main-color)
+}
+.login button:hover i{
+    font-size: 27px;
 }
 .login div.register{
     margin-top: 20px;
+    text-align: center;
 }
 .login a{
     color:var(--main-color)
@@ -41,6 +63,71 @@ body{
 }
 
 #register-form{
-    height: 500px;
+    height: 600px;
 
+}
+.box-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between  ;
+}
+.box-icon div{
+    width: 70px;
+    height: 40px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--main-color);
+    border: 1px solid var(--main-color);
+    color:#fff;
+    margin-bottom: 20px;
+
+    margin-top: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.box-icon div:hover{
+    background: #fff;
+    color:var(--main-color)
+}
+.box-icon i{
+    font-size: 14px;
+}
+.box-icon div:hover i{
+    font-size: 18px;
+}
+h2{
+    text-align: center;
+}
+.hide{
+    display: none;;
+}
+.login-success, .login-failed{
+    position: fixed;
+    top:81px;
+    right:0;
+    animation: move 3s ease-out; /* Áp dụng animation */
+    opacity: 0;
+}
+
+.login-failed{
+    position: fixed;
+
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }

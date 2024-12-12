@@ -9,12 +9,74 @@
     <link rel="stylesheet" href="asset/css/reset.css">
     <link rel="stylesheet" href="asset/css/base.css">
     <link rel="stylesheet" href="asset/css/login.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <!-- header -->
+    <div class="menu">
+        <ul class="container container_menu">
+            <li class="bar hide">
+                <i class="fa-solid fa-bars"></i>
+            </li>
+            <li class="logo">
+                <a href="index.html">
+                    <img src="asset/img/logo.png" alt="">
+                </a>
+            </li>
+            <li class="item">
+                <a href="index.html">Trang chủ</a>
+            </li>
+            <li class="product item">
+                <a href="product.html">Sản phẩm</a>
+            </li>
+            <li class="item">
+                <a href="blog.html">Tin tức</a>
+            </li>
+            <li class="policy item">
+                <a href="policy.html">Chính sách</a>
+                <div class="dropdown hide">
+                    <a href="product1.html">Bảo mật</a>
+                    <a href="product2.html">Bảo hành</a>
+                    <a href="product3.html">Sử dụng</a>
+                </div>
+            </li>
+            <li class="item">
+                <a href="about.html">Giới thiệu</a>
+            </li>
+            <li class="item">
+                <a href="contact.html">Liên hệ</a>
+            </li>
+            <li class="cart">
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <a href="login.html">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </li>
+        </ul>
+        <div class="dropdown-bar hide">
+            <a href="index.html">Trang chủ</a>
+            <a href="product.html">Sản phẩm</a>
+            <a href="policy.html">Chính sách</a>
+            <a href="about.html">Giới thiệu</a>
+            <a href="contact.html">Liên hệ</a>
+        </div>
+    </div>
+    <div class="alert alert-success login-success hide" role="alert">
+        Đăng nhập thành công
+    </div>
+    <div class="alert alert-danger login-failed hide" role="alert">
+        Đăng nhập thất bại
+    </div>
     <div class="login">
         <form action="" id="register-form">
             <div class="wrapper">
+                <h2>Đăng kí</h2>
                 <div class="form-group">
                     <label for="name" class="">Họ và tên</label>
                     <input type="name" id="name" name="name" class="form-control">
@@ -35,7 +97,8 @@
                     <input type="password" id="confirmPassword" name="confirmPassword" class="form-control">
                     <span class="form-message"></span>
                 </div>
-                <button type="submit" class="btn">Đăng kí</button>
+                <button type="submit" class="btn"
+                    style="width: 120px;height: 50px;font-size: 20px;margin-top: 30px;">Đăng kí</button>
                 <div class="register">
                     <a href="login.html">Bạn đã có tài khoản? Đăng nhập</a>
                 </div>
@@ -45,7 +108,102 @@
     </div>
 
 
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <ul class="col-xs-12 col-md-6 col-lg-3">
+                    <li>
+                        Thông tin chung
+                    </li>
+                    <li>
+                        <span>
+                            ORNALDO Sports
+                        </span> là hệ thống cửa hàng cầu lông với hơn 50 chi nhánh trên toàn quốc, cung cấp sỉ và
+                        lẻ các mặt hàng dụng cụ cầu lông từ phong trào tới chuyên nghiệp
 
+                    </li>
+                    <li>
+                        <span>Với sứ mệnh</span>
+                        : "ORNALDO cam kết mang đến những sản phẩm, dịch vụ chất lượng tốt nhất phục vụ cho
+                        người
+                        chơi thể thao để nâng cao sức khỏe của chính mình."
+
+                    </li>
+                    <li>
+                        <span>Tầm nhìn</span>: "Trở thành nhà phân phối và sản xuất thể thao lớn nhất Việt Nam"
+                    </li>
+                </ul>
+                <ul class="col-xs-12 col-md-6 col-lg-3">
+                    <li>
+                        Thông tin liên hệ
+                    </li>
+                    <li>
+                        <span>Hotline</span>
+                        : 0977508430 | 0338000308
+                    </li>
+                    <li>
+                        <span>Email</span>
+                        : info@esports.com
+                    </li>
+                    <li>
+                        <span>Hotline bán sỉ</span>
+                        : 0911 105 211
+                    </li>
+                    <li>
+                        <span>Địa chỉ</span>
+                        : 999 Thanh Trì, Hà Nội
+                    </li>
+                    <li class="social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-tiktok"></i>
+                    </li>
+                </ul>
+                <ul class="col-xs-12 col-md-6 col-lg-3">
+                    <li>
+                        Chính sách
+                    </li>
+                    <li>
+                        <a href="">
+                            Chính sách bảo hành
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Chính sách bảo mật
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Điều khoản sử dụng
+                        </a>
+                    </li>
+                </ul>
+                <ul class="col-xs-12 col-md-6 col-lg-3">
+                    <li>
+                        Hướng dẫn
+                    </li>
+                    <li>
+                        <a href="">
+                            Hướng dẫn chọn vợt cầu lông cho người mới chơi
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Bảng size Lining - Cách chọn size quần áo lining, giày cầu lông Lining
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Hướng dẫn mua hàng
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
 
 </body>
 <script src="asset/js/validator.js"></script>
@@ -62,5 +220,6 @@
     }
     validator(option)
 </script>
+<script src="asset/js/base.js"></script>
 
 </html>

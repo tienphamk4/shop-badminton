@@ -134,7 +134,14 @@
 }
 .deal .item .image{
     width: 100%;
-    aspect-ratio: 16/9;
+    overflow: hidden;
+
+}
+.deal .item img{
+    transition: 0.5s;
+}
+.deal .item img:hover{
+    transform: scale(1.3);
 }
 .deal .item .name{
     font-size: 16px;
@@ -148,7 +155,13 @@
 .deal i{
     font-size: 20px;
 }
-
+.deal .content{
+    transition: 0.5s;
+}
+.deal .content:hover{
+    background: white;
+    color:var(--main-color)
+}
 @media screen and (max-width:768px) {
     .deal .item{
         padding-left: 10px;
@@ -181,7 +194,15 @@
     background: #eee;
     padding:10px;
 }
-
+.blog .image{
+    overflow: hidden;
+}
+.blog .image img{
+    transition: 0.5s;
+}
+.blog .image img:hover{
+    transform: scale(1.3);
+}
 .blog .content{
     position: relative;
     height: 250px;

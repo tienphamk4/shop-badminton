@@ -1,0 +1,203 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Vợt cầu lông Yonex Nanoflare 2024",
+      "price": 3729000,
+      "image": ""
+    },
+    {
+      "id": 2,
+      "name": "Vợt cầu lông Yonex Nanoflare Starbucks",
+      "price": 2000000,
+      "image": ""
+    },
+    {
+      "id": 3,
+      "name": "Vợt cầu lông Victor Auraspeed 90K",
+      "price": 3250000,
+      "image": ""
+    },
+    {
+      "id": 4,
+      "name": "Vợt cầu lông Li-Ning Aeronaut 9000C",
+      "price": 4500000,
+      "image": ""
+    },
+    {
+      "id": 5,
+      "name": "Vợt cầu lông Yonex Astrox 99",
+      "price": 4000000,
+      "image": ""
+    },
+    {
+      "id": 6,
+      "name": "Vợt cầu lông Babolat Satelite Gravity 74",
+      "price": 3100000,
+      "image": ""
+    },
+    {
+      "id": 7,
+      "name": "Vợt cầu lông Mizuno Aero 95",
+      "price": 2750000,
+      "image": ""
+    },
+    {
+      "id": 8,
+      "name": "Vợt cầu lông Apacs Z-Ziggler",
+      "price": 1500000,
+      "image": ""
+    },
+    {
+      "id": 9,
+      "name": "Vợt cầu lông Protech Maxilite 800",
+      "price": 1800000,
+      "image": ""
+    },
+    {
+      "id": 10,
+      "name": "Vợt cầu lông Adidas Wucht P8",
+      "price": 4500000,
+      "image": ""
+    },
+    {
+      "id": 11,
+      "name": "Vợt cầu lông Dunlop Graviton XF 88G",
+      "price": 2500000,
+      "image": ""
+    },
+    {
+      "id": 12,
+      "name": "Vợt cầu lông Kawasaki King K9",
+      "price": 2100000,
+      "image": ""
+    },
+    {
+      "id": 13,
+      "name": "Vợt cầu lông Victor Thruster K Falcon",
+      "price": 3700000,
+      "image": ""
+    },
+    {
+      "id": 14,
+      "name": "Vợt cầu lông Li-Ning Windstorm 72",
+      "price": 2800000,
+      "image": ""
+    },
+    {
+      "id": 15,
+      "name": "Vợt cầu lông Yonex Duora 10",
+      "price": 3200000,
+      "image": ""
+    },
+    {
+      "id": 16,
+      "name": "Vợt cầu lông Apacs Virtuoso Performance",
+      "price": 1900000,
+      "image": ""
+    },
+    {
+      "id": 17,
+      "name": "Vợt cầu lông Victor Jetspeed S12",
+      "price": 4000000,
+      "image": ""
+    },
+    {
+      "id": 18,
+      "name": "Vợt cầu lông Yonex Voltric Z Force II",
+      "price": 4200000,
+      "image": ""
+    },
+    {
+      "id": 19,
+      "name": "Vợt cầu lông Mizuno JPX CX Edition",
+      "price": 3100000,
+      "image": ""
+    },
+    {
+      "id": 20,
+      "name": "Vợt cầu lông Babolat Prime Power",
+      "price": 2950000,
+      "image": ""
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "email": "tienolympia2020@gmail.com",
+      "name": "pham ngoc tien",
+      "password": "123456"
+    },
+    {
+      "id": "2",
+      "email": "tienolympia2@gmail.com",
+      "password": "12123214"
+    },
+    {
+      "id": 3,
+      "name": "pro tien",
+      "email": "adslkjf@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": 4,
+      "name": "ngoc em",
+      "email": "ngoc@gmail.com",
+      "password": "ngoc123"
+    },
+    {
+      "id": 5,
+      "name": "Phamtienk4",
+      "email": "tiendeptrai@gmail.comm",
+      "password": "123tien"
+    },
+    {
+      "id": 6,
+      "name": "tien",
+      "email": "1sdfj@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": 7,
+      "name": "Phamtienk411",
+      "email": "tienolympia202222@gmail.com",
+      "password": "klkl"
+    },
+    {
+      "id": 8,
+      "name": "123456",
+      "email": "25a4041924@hvnh.edu.vn",
+      "password": "123"
+    },
+    {
+      "id": 9,
+      "name": "123456",
+      "email": "tienolympia22022@gmail.com",
+      "password": "111"
+    },
+    {
+      "id": 10,
+      "name": "1234562",
+      "email": "12312@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": 11,
+      "name": "Phamtienk4",
+      "email": "12312@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": 12,
+      "name": "2",
+      "email": "tienhvnhgpt@gmail.com",
+      "password": "1"
+    },
+    {
+      "id": 13,
+      "name": "Phamtienk421312",
+      "email": "0395527082@dfadsf.com",
+      "password": "ádf"
+    }
+  ]
+}
