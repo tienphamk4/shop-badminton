@@ -1,203 +1,307 @@
 {
+  "user": [],
+  "cart": [],
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Vợt cầu lông Yonex Nanoflare 2024",
       "price": 3729000,
-      "image": ""
-    },
-    {
-      "id": 2,
-      "name": "Vợt cầu lông Yonex Nanoflare Starbucks",
-      "price": 2000000,
-      "image": ""
-    },
-    {
-      "id": 3,
-      "name": "Vợt cầu lông Victor Auraspeed 90K",
-      "price": 3250000,
-      "image": ""
-    },
-    {
-      "id": 4,
-      "name": "Vợt cầu lông Li-Ning Aeronaut 9000C",
-      "price": 4500000,
-      "image": ""
-    },
-    {
-      "id": 5,
-      "name": "Vợt cầu lông Yonex Astrox 99",
-      "price": 4000000,
-      "image": ""
-    },
-    {
-      "id": 6,
-      "name": "Vợt cầu lông Babolat Satelite Gravity 74",
-      "price": 3100000,
-      "image": ""
-    },
-    {
-      "id": 7,
-      "name": "Vợt cầu lông Mizuno Aero 95",
-      "price": 2750000,
-      "image": ""
-    },
-    {
-      "id": 8,
-      "name": "Vợt cầu lông Apacs Z-Ziggler",
-      "price": 1500000,
-      "image": ""
-    },
-    {
-      "id": 9,
-      "name": "Vợt cầu lông Protech Maxilite 800",
-      "price": 1800000,
-      "image": ""
-    },
-    {
-      "id": 10,
-      "name": "Vợt cầu lông Adidas Wucht P8",
-      "price": 4500000,
-      "image": ""
-    },
-    {
-      "id": 11,
-      "name": "Vợt cầu lông Dunlop Graviton XF 88G",
-      "price": 2500000,
-      "image": ""
-    },
-    {
-      "id": 12,
-      "name": "Vợt cầu lông Kawasaki King K9",
-      "price": 2100000,
-      "image": ""
-    },
-    {
-      "id": 13,
-      "name": "Vợt cầu lông Victor Thruster K Falcon",
-      "price": 3700000,
-      "image": ""
-    },
-    {
-      "id": 14,
-      "name": "Vợt cầu lông Li-Ning Windstorm 72",
-      "price": 2800000,
-      "image": ""
-    },
-    {
-      "id": 15,
-      "name": "Vợt cầu lông Yonex Duora 10",
-      "price": 3200000,
-      "image": ""
-    },
-    {
-      "id": 16,
-      "name": "Vợt cầu lông Apacs Virtuoso Performance",
-      "price": 1900000,
-      "image": ""
-    },
-    {
-      "id": 17,
-      "name": "Vợt cầu lông Victor Jetspeed S12",
-      "price": 4000000,
-      "image": ""
-    },
-    {
-      "id": 18,
-      "name": "Vợt cầu lông Yonex Voltric Z Force II",
-      "price": 4200000,
-      "image": ""
-    },
-    {
-      "id": 19,
-      "name": "Vợt cầu lông Mizuno JPX CX Edition",
-      "price": 3100000,
-      "image": ""
-    },
-    {
-      "id": 20,
-      "name": "Vợt cầu lông Babolat Prime Power",
-      "price": 2950000,
-      "image": ""
-    }
-  ],
-  "user": [
-    {
-      "id": 1,
-      "email": "tienolympia2020@gmail.com",
-      "name": "pham ngoc tien",
-      "password": "123456"
+      "image": "asset/img/pro-1.webp",
+      "type": "vot"
     },
     {
       "id": "2",
-      "email": "tienolympia2@gmail.com",
-      "password": "12123214"
+      "name": "Vợt cầu lông Yonex Nanoflare Starbucks",
+      "price": 2000000,
+      "image": "asset/img/pro-2.webp",
+      "type": "vot"
     },
     {
-      "id": 3,
-      "name": "pro tien",
-      "email": "adslkjf@gmail.com",
-      "password": "123456"
+      "id": "3",
+      "name": "Vợt cầu lông Victor Auraspeed 90K",
+      "price": 3250000,
+      "image": "asset/img/pro-3.webp",
+      "type": "vot"
     },
     {
-      "id": 4,
-      "name": "ngoc em",
-      "email": "ngoc@gmail.com",
-      "password": "ngoc123"
+      "id": "4",
+      "name": "Vợt cầu lông Li-Ning Aeronaut 9000C",
+      "price": 4500000,
+      "image": "asset/img/pro-4.webp",
+      "type": "vot"
     },
     {
-      "id": 5,
-      "name": "Phamtienk4",
-      "email": "tiendeptrai@gmail.comm",
-      "password": "123tien"
+      "id": "5",
+      "name": "Vợt cầu lông Yonex Astrox 99",
+      "price": 4000000,
+      "image": "asset/img/pro-5.webp",
+      "type": "vot"
     },
     {
-      "id": 6,
-      "name": "tien",
-      "email": "1sdfj@gmail.com",
-      "password": "123"
+      "id": "6",
+      "name": "Vợt cầu lông Babolat Satelite Gravity 74",
+      "price": 3100000,
+      "image": "asset/img/pro-6.webp",
+      "type": "vot"
     },
     {
-      "id": 7,
-      "name": "Phamtienk411",
-      "email": "tienolympia202222@gmail.com",
-      "password": "klkl"
+      "id": "7",
+      "name": "Vợt cầu lông Mizuno Aero 95",
+      "price": 2750000,
+      "image": "asset/img/pro-7.webp",
+      "type": "vot"
     },
     {
-      "id": 8,
-      "name": "123456",
-      "email": "25a4041924@hvnh.edu.vn",
-      "password": "123"
+      "id": "8",
+      "name": "Vợt cầu lông Apacs Z-Ziggler",
+      "price": 1500000,
+      "image": "asset/img/pro-8.webp",
+      "type": "vot"
     },
     {
-      "id": 9,
-      "name": "123456",
-      "email": "tienolympia22022@gmail.com",
-      "password": "111"
+      "id": "9",
+      "name": "Vợt cầu lông Protech Maxilite 800",
+      "price": 1800000,
+      "image": "asset/img/pro-9.webp",
+      "type": "vot"
     },
     {
-      "id": 10,
-      "name": "1234562",
-      "email": "12312@gmail.com",
-      "password": "123"
+      "id": "10",
+      "name": "Vợt cầu lông Adidas Wucht P8",
+      "price": 4500000,
+      "image": "asset/img/pro-10.webp",
+      "type": "vot"
     },
     {
-      "id": 11,
-      "name": "Phamtienk4",
-      "email": "12312@gmail.com",
-      "password": "123"
+      "id": "11",
+      "name": "Vợt cầu lông Dunlop Graviton XF 88G",
+      "price": 2500000,
+      "image": "asset/img/pro-11.webp",
+      "type": "vot"
     },
     {
-      "id": 12,
-      "name": "2",
-      "email": "tienhvnhgpt@gmail.com",
-      "password": "1"
+      "id": "12",
+      "name": "Vợt cầu lông Kawasaki King K9",
+      "price": 2100000,
+      "image": "asset/img/pro-12.webp",
+      "type": "vot"
     },
     {
-      "id": 13,
-      "name": "Phamtienk421312",
-      "email": "0395527082@dfadsf.com",
-      "password": "ádf"
+      "id": "13",
+      "name": "Vợt cầu lông Victor Thruster K Falcon",
+      "price": 3700000,
+      "image": "asset/img/pro-13.webp",
+      "type": "vot"
+    },
+    {
+      "id": "14",
+      "name": "Áo Cầu Lông Yonex A27 Nam - Trắng Xanh",
+      "price": 140000,
+      "image": "asset/img/pro-14.webp",
+      "type": "trangphuc"
+    },
+    {
+      "id": "15",
+      "name": "Áo Cầu Lông Yonex A28 Nam - Đen Đỏ",
+      "price": 150000,
+      "image": "asset/img/pro-15.webp",
+      "type": "trangphuc"
+    },
+    {
+      "id": "16",
+      "name": "Quần Cầu Lông Yonex Q20 Nam - Trắng",
+      "price": 130000,
+      "image": "asset/img/pro-16.webp",
+      "type": "trangphuc"
+    },
+    {
+      "id": "17",
+      "name": "Áo Cầu Lông Yonex A29 Nữ - Hồng",
+      "price": 140000,
+      "image": "asset/img/pro-17.webp",
+      "type": "trangphuc"
+    },
+    {
+      "id": "18",
+      "name": "Áo Cầu Lông Yonex A30 Nam - Xanh Đen",
+      "price": 145000,
+      "image": "asset/img/pro-18.webp",
+      "type": "trangphuc"
+    },
+    {
+      "id": "19",
+      "name": "Quần Cầu Lông Yonex Q21 Nam - Đen",
+      "price": 135000,
+      "image": "asset/img/pro-19.webp",
+      "type": "trangphuc"
+    },
+    {
+      "id": "20",
+      "name": "Áo Cầu Lông Yonex A31 Nữ - Trắng Tím",
+      "price": 150000,
+      "image": "asset/img/pro-20.webp",
+      "type": "trangphuc"
+    },
+    {
+      "id": "21",
+      "name": "Quần Cầu Lông Yonex Q22 Nữ - Hồng Nhạt",
+      "price": 130000,
+      "image": "asset/img/pro-21.webp",
+      "type": "trangphuc"
+    },
+    {
+      "id": "22",
+      "name": "Áo Cầu Lông Yonex A32 Nam - Xanh Lá",
+      "price": 145000,
+      "image": "asset/img/pro-22.webp",
+      "type": "trangphuc"
+    },
+    {
+      "id": "23",
+      "name": "Giày cầu lông Yonex SHB 39EX",
+      "price": 1690000,
+      "image": "asset/img/pro-23.webp",
+      "type": "giay"
+    },
+    {
+      "id": "24",
+      "name": "Giày cầu lông Yonex SHB 50EX",
+      "price": 1790000,
+      "image": "asset/img/pro-24.webp",
+      "type": "giay"
+    },
+    {
+      "id": "25",
+      "name": "Giày cầu lông Lining AYTM 129",
+      "price": 1850000,
+      "image": "asset/img/pro-25.webp",
+      "type": "giay"
+    },
+    {
+      "id": "26",
+      "name": "Giày cầu lông Victor A610 II",
+      "price": 1650000,
+      "image": "asset/img/pro-26.webp",
+      "type": "giay"
+    },
+    {
+      "id": "27",
+      "name": "Giày cầu lông Yonex Power Cushion 65Z2",
+      "price": 1950000,
+      "image": "asset/img/pro-27.webp",
+      "type": "giay"
+    },
+    {
+      "id": "28",
+      "name": "Giày cầu lông Kawasaki K526",
+      "price": 1490000,
+      "image": "asset/img/pro-28.webp",
+      "type": "giay"
+    },
+    {
+      "id": "29",
+      "name": "Giày cầu lông Yonex Eclipsion Z3",
+      "price": 2200000,
+      "image": "asset/img/pro-29.webp",
+      "type": "giay"
+    },
+    {
+      "id": "30",
+      "name": "Giày cầu lông Mizuno Wave Claw",
+      "price": 1750000,
+      "image": "asset/img/pro-30.webp",
+      "type": "giay"
+    },
+    {
+      "id": "31",
+      "name": "Giày cầu lông Victor SH-A920",
+      "price": 1900000,
+      "image": "asset/img/pro-31.webp",
+      "type": "giay"
+    },
+    {
+      "id": "32",
+      "name": "Giày cầu lông Lining Cloud Ace",
+      "price": 1600000,
+      "image": "asset/img/pro-32.webp",
+      "type": "giay"
+    },
+    {
+      "id": "33",
+      "name": "Giày cầu lông Yonex SHB 65R3",
+      "price": 1700000,
+      "image": "asset/img/pro-33.webp",
+      "type": "giay"
+    },
+    {
+      "id": "34",
+      "name": "Quả cầu lông Yonex Mavis 350",
+      "price": 250000,
+      "image": "asset/img/pro-34.webp",
+      "type": "phukien"
+    },
+    {
+      "id": "35",
+      "name": "Túi đựng vợt cầu lông Yonex 9829",
+      "price": 1250000,
+      "image": "asset/img/pro-35.webp",
+      "type": "phukien"
+    },
+    {
+      "id": "36",
+      "name": "Băng quấn cán vợt Yonex AC102",
+      "price": 60000,
+      "image": "asset/img/pro-40.webp",
+      "type": "phukien"
+    },
+    {
+      "id": "37",
+      "name": "Lưới cầu lông Yonex Pro Net",
+      "price": 950000,
+      "image": "asset/img/pro-36.webp",
+      "type": "phukien"
+    },
+    {
+      "id": "38",
+      "name": "Túi đựng giày cầu lông Lining ABJG 092",
+      "price": 300000,
+      "image": "asset/img/pro-38.webp",
+      "type": "phukien"
+    },
+    {
+      "id": "39",
+      "name": "Quả cầu lông Lining A+62",
+      "price": 280000,
+      "image": "asset/img/pro-39.webp",
+      "type": "phukien"
+    },
+    {
+      "id": "40",
+      "name": "Băng bảo vệ cổ tay Victor WR-600",
+      "price": 150000,
+      "image": "asset/img/pro-40.webp",
+      "type": "phukien"
+    },
+    {
+      "id": "41",
+      "name": "Túi cầu lông Victor BR9608",
+      "price": 850000,
+      "image": "asset/img/pro-35.webp",
+      "type": "phukien"
+    },
+    {
+      "id": "42",
+      "name": "Lưới cầu lông Kawasaki Pro",
+      "price": 700000,
+      "image": "asset/img/pro-36.webp",
+      "type": "phukien"
+    },
+    {
+      "id": "43",
+      "name": "Hộp đựng cầu lông Yonex Tubes",
+      "price": 120000,
+      "image": "asset/img/pro-43.webp",
+      "type": "phukien"
     }
   ]
 }

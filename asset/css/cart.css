@@ -52,3 +52,9 @@
     color:#fff;
     background: var(--main-color);
 }
+
+@media screen and (max-width: 992px) {
+    .remove{
+        margin-top: 20px;
+    }
+}
