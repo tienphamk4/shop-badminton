@@ -1,7 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #FFFFFF;
-}
+
 
 /* Tinh chỉnh các thành phần form trong sidebar */
 aside form select, aside form .form-check {
@@ -132,18 +129,18 @@ aside form button {
     color:#fff;
 }
 
-ul li .page-link{
+.main ul li .page-link{
     background-color: #fff;
     color:#E95221;
     border-radius: 50%;
 }
 
-ul li .page-link:hover{
+.main ul li .page-link:hover{
     color:#E95221;
 
 }
 
-ul li .page-link.active {
+.main ul li .page-link.active {
     background-color: #E95221;
     color:#fff;
     border-color: #E95221;

@@ -1,7 +1,20 @@
 .hide{
     display: none !important;
 }
-
+.nav{
+}
+.breadcrumb{
+    padding: 15px 0;
+    margin-bottom: 0;
+    background: none;
+}
+.breadcrumb a{
+    color: black;
+    font-weight: 400;
+}
+.breadcrumb .active a{
+    color:var(--main-color)
+}
 /* menu */
 .menu{
     background: var(--main-color);

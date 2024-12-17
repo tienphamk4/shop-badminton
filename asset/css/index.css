@@ -75,6 +75,7 @@
 }
 .products img{
     transition: 0.5s;
+    border: 1px solid #eeee
 }
 .products img:hover{
     transform: scale(1.2);
@@ -238,5 +239,16 @@
     }
     .blog .content{
         width: 100%;
+    }
+    .blog .read{
+        display: none;
+    }
+}
+@media (max-width:576px){
+    .blog .read{
+        display: none;
+    }
+    .blog .content{
+        height: auto;
     }
 }

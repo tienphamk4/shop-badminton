@@ -18,7 +18,7 @@ function renderProduct(data) {
     data.forEach(product => {
         html += `
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-4 item-${product.id}">
-                        <div class="card h-100 position-relative">
+                        <div class="card position-relative">
                             <a target="_self">
                                 <img src="${product.image}" class="card-img-top" alt="Vợt cầu lông">
                                 <div class="card-body text-center">
@@ -94,7 +94,7 @@ document.querySelector('.filter').onchange = function () {
             if (pro.type === checked.value) {
                 html += `
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-4 item-${pro.id}">
-                        <div class="card h-100 position-relative">
+                        <div class="card position-relative">
                             <a href="#" target="_self">
                                 <img src="${pro.image}" class="card-img-top" alt="Vợt cầu lông">
                                 <div class="card-body text-center">
