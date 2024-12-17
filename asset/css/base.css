@@ -1,8 +1,8 @@
 .hide{
     display: none !important;
 }
-.nav{
-}
+
+/*  */
 .breadcrumb{
     padding: 15px 0;
     margin-bottom: 0;
@@ -15,6 +15,33 @@
 .breadcrumb .active a{
     color:var(--main-color)
 }
+/* header */
+.header a{
+    color:black
+}
+.header i{
+    margin-right: 10px;
+}
+.header ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+    padding:15px;
+    flex-wrap: wrap;
+}
+
+@media (max-width:992px) {
+    .header .search{
+        display: none;
+    }
+}
+@media (max-width:720px) {
+    .header{
+        display: none;
+    }
+}
+
 /* menu */
 .menu{
     background: var(--main-color);
