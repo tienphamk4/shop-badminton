@@ -6,24 +6,28 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
 }
 
 .form-container {
     width: 90%;
     max-width: 600px;
     background: #fff;
-    padding: 20px;
+    padding: 30px;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
+    height: auto;
 }
 
 .logo {
-    max-width: 100px;  /* Điều chỉnh kích thước logo theo ý muốn */
-    margin: 0 auto 15px;  /* Căn giữa logo và khoảng cách dưới logo */
-    display: block;  /* Đảm bảo logo được hiển thị như một phần tử block để căn giữa */
+    max-width: 100px;
+    /* Điều chỉnh kích thước logo theo ý muốn */
+    margin: 0 auto 15px;
+    /* Căn giữa logo và khoảng cách dưới logo */
+    display: block;
+    /* Đảm bảo logo được hiển thị như một phần tử block để căn giữa */
 }
 
 h2 {
@@ -42,7 +46,8 @@ h2 {
     font-weight: bold;
 }
 
-.form-group input, .form-group textarea {
+.form-group input,
+.form-group textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
@@ -94,18 +99,65 @@ h2 {
     border: 1px dashed #ccc;
 }
 
-@media (max-width: 480px) {
+/* Điều chỉnh cho màn hình nhỏ (768px và dưới) */
+@media screen and (max-width: 768px) {
     .form-container {
-        padding: 15px;
+        width: 95%;
     }
 
-    .form-group input, .form-group textarea {
+    .logo {
+        max-width: 60px;
+        /* Giảm kích thước logo thêm */
+        margin-bottom: 10px;
+        /* Giảm khoảng cách dưới logo */
+    }
+
+    .title-1 {
+        font-size: 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
         font-size: 14px;
-        padding: 8px;
     }
 
     .payment-options button {
         font-size: 14px;
-        padding: 8px;
+        padding: 12px;
+    }
+
+    .discounts {
+        font-size: 14px;
+    }
+}
+
+/* Điều chỉnh cho màn hình rất nhỏ (480px và dưới) */
+@media screen and (max-width: 480px) {
+    .form-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .logo {
+        max-width: 50px;
+        /* Giảm kích thước logo cho màn hình rất nhỏ */
+    }
+
+    title-1 {
+        font-size: 18px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px;
+    }
+
+    .payment-options button {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .discounts {
+        font-size: 12px;
     }
 }
