@@ -12,12 +12,18 @@ body {
 .form-container {
     width: 90%;
     max-width: 600px;
-    background: #fff;
+    background: #ff6600;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
+}
+
+.logo {
+    max-width: 100px;  /* Điều chỉnh kích thước logo theo ý muốn */
+    margin: 0 auto 15px;  /* Căn giữa logo và khoảng cách dưới logo */
+    display: block;  /* Đảm bảo logo được hiển thị như một phần tử block để căn giữa */
 }
 
 h2 {
