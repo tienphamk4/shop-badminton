@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    width: 90%;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+h2 {
+    color: #ff6600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.payment-options button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.payment-options button:hover {
+    transform: scale(1.05);
+}
+
+.payment-options button:active {
+    transform: scale(0.95);
+    background-color: #dcdcdc;
+}
+
+.payment-options button.cod {
+    background-color: #f44336;
+    color: white;
+}
+
+.payment-options button.card {
+    background-color: #4caf50;
+    color: white;
+}
+
+.payment-options button.later {
+    background-color: #ffd700;
+    color: black;
+}
+
+.discounts {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px dashed #ccc;
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        padding: 15px;
+    }
+
+    .form-group input, .form-group textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .payment-options button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

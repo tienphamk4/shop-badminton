@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Checkout</title>
+    <link rel="stylesheet" href="tt.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>VNBSports</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Họ và tên người nhận hàng</label>
+                <input type="text" id="name" placeholder="Nhập họ và tên">
+            </div>
+            <div class="form-group">
+                <label for="phone">Số điện thoại</label>
+                <input type="text" id="phone" placeholder="Nhập số điện thoại">
+            </div>
+            <div class="form-group">
+                <label for="address">Địa chỉ</label>
+                <input type="text" id="address" placeholder="Nhập địa chỉ">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Nhập email">
+            </div>
+            <div class="form-group">
+                <label for="notes">Ghi chú đơn hàng (tuỳ chọn)</label>
+                <textarea id="notes" placeholder="Nhập ghi chú"></textarea>
+            </div>
+        </form>
+        <div class="payment-options">
+            <button class="cod">Thanh toán khi nhận hàng (COD)</button>
+            <button class="card">Thanh toán thẻ (Visa, MasterCard, JCB)</button>
+            <button class="later">Mua trả chậm</button>
+        </div>
+        <div class="discounts">
+            <p>Giảm 5% cho đơn hàng từ 56K, sử dụng 2 lần/tháng.</p>
+            <p>Giảm 7% tối đa 700K, sử dụng 1 lần/tháng.</p>
+            <p>Hạn mức trả góp lên tới 30,000,000 VNĐ với phí chỉ 2.5%.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
