@@ -1,42 +1,6 @@
 {
   "user": [],
-  "cart": [
-    {
-      "id": "1",
-      "name": "Vợt cầu lông Yonex Nanoflare 2024",
-      "price": 3729000,
-      "image": "asset/img/pro-1.webp",
-      "type": "vot"
-    },
-    {
-      "id": "3",
-      "name": "Vợt cầu lông Victor Auraspeed 90K",
-      "price": 3250000,
-      "image": "asset/img/pro-3.webp",
-      "type": "vot"
-    },
-    {
-      "id": "2",
-      "name": "Vợt cầu lông Yonex Nanoflare Starbucks",
-      "price": 2000000,
-      "image": "asset/img/pro-2.webp",
-      "type": "vot"
-    },
-    {
-      "id": "3",
-      "name": "Vợt cầu lông Victor Auraspeed 90K",
-      "price": 3250000,
-      "image": "asset/img/pro-3.webp",
-      "type": "vot"
-    },
-    {
-      "id": "18",
-      "name": "Áo Cầu Lông Yonex A30 Nam - Xanh Đen",
-      "price": 145000,
-      "image": "asset/img/pro-18.webp",
-      "type": "trangphuc"
-    }
-  ],
+  "cart": [],
   "products": [
     {
       "id": "1",

@@ -26,11 +26,11 @@ function renderCart() {
                     </div>
                     <div class="quantity col-lg-2 col-md-3 col-sm-3 text-center d-flex align-items-center justify-content-center mb-2 mt-2">
                         <div><i class="fa-solid fa-plus" onclick="add(${cart.id})"></i></div>
-                        <input type="text" value="1">
+                        <input type="text" value="${cart.quantity}">
                         <i class="fa-solid fa-minus" onclick=extract(${cart.id})></i>
                     </div>
                     <div class="price col-lg-2 col-sm-3 text-center">
-                        <span>${cart.price}</span> VND 
+                        <span>${cart.price * cart.quantity}</span> VND 
                     </div>
                     <div class="remove col-lg-2 text-center">
                         <i class="fa-solid fa-trash" onclick="removeCart(${cart.id})"></i>
