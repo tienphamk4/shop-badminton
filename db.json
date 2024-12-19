@@ -1,6 +1,88 @@
 {
   "user": [],
-  "cart": [],
+  "cart": [
+    {
+      "id": "1",
+      "name": "Vợt cầu lông Yonex Nanoflare 2024",
+      "price": 3729000,
+      "image": "asset/img/pro-1.webp",
+      "type": "vot",
+      "product_id": "1",
+      "quantity": 20
+    },
+    {
+      "id": "2",
+      "name": "Vợt cầu lông Yonex Nanoflare Starbucks",
+      "price": 2000000,
+      "image": "asset/img/pro-2.webp",
+      "type": "vot",
+      "product_id": "2",
+      "quantity": 8
+    },
+    {
+      "id": "3",
+      "name": "Vợt cầu lông Victor Auraspeed 90K",
+      "price": 3250000,
+      "image": "asset/img/pro-3.webp",
+      "type": "vot",
+      "product_id": "3",
+      "quantity": 1
+    },
+    {
+      "id": "4",
+      "name": "Vợt cầu lông Adidas Wucht P8",
+      "price": 4500000,
+      "image": "asset/img/pro-10.webp",
+      "type": "vot",
+      "product_id": "10",
+      "quantity": 2
+    },
+    {
+      "id": "5",
+      "name": "Vợt cầu lông Protech Maxilite 800",
+      "price": 1800000,
+      "image": "asset/img/pro-9.webp",
+      "type": "vot",
+      "product_id": "9",
+      "quantity": 1
+    },
+    {
+      "id": "6",
+      "name": "Vợt cầu lông Babolat Satelite Gravity 74",
+      "price": 3100000,
+      "image": "asset/img/pro-6.webp",
+      "type": "vot",
+      "product_id": "6",
+      "quantity": 1
+    },
+    {
+      "id": "7",
+      "name": "Vợt cầu lông Yonex Astrox 99",
+      "price": 4000000,
+      "image": "asset/img/pro-5.webp",
+      "type": "vot",
+      "product_id": "5",
+      "quantity": 1
+    },
+    {
+      "id": "8",
+      "name": "Giày cầu lông Yonex SHB 50EX",
+      "price": 1790000,
+      "image": "asset/img/pro-24.webp",
+      "type": "giay",
+      "product_id": "24",
+      "quantity": 2
+    },
+    {
+      "id": "9",
+      "name": "Giày cầu lông Yonex SHB 39EX",
+      "price": 1690000,
+      "image": "asset/img/pro-23.webp",
+      "type": "giay",
+      "product_id": "23",
+      "quantity": 2
+    }
+  ],
   "products": [
     {
       "id": "1",

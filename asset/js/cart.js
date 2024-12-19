@@ -16,7 +16,7 @@ function renderCart() {
     var html = '';
     var totalPrice = 0;
     carts.forEach(cart => {
-        totalPrice += cart.price;
+        totalPrice += cart.price * cart.quantity;
         html += `<div class="cart_item row" data-id="${cart.id}">
                     <div class="image col-lg-2">
                         <img src="${cart.image}" alt="">

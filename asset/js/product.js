@@ -51,7 +51,6 @@ function renderProduct(data) {
 }
 
 function handleAddToCart(id) {
-    getCart();
 
     var product = products.find(pro => {
         return pro.id == id;
@@ -63,16 +62,15 @@ function handleAddToCart(id) {
         // thuc hien update quantity
         var cart_item = { ...isInCart }
         cart_item.quantity += 1;
-        console.log(Number(cart_item.id));
-        console.log(product.id);
 
-        // putCart(cart_item);
+        putCart(cart_item);
     }
     else {
         var cart_item = { ...product };
 
         cart_item.product_id = product.id;
         cart_item.id = cart.length + 1;
+        cart_item.id = cart_item.id.toString();
         cart_item.quantity = 1;
 
         // call api
@@ -93,16 +91,17 @@ function postCart(cart_item) {
             return response.json();
         })
         .then(function (data) {
-
             alert("Đã thêm vào giỏ hàng")
+            getCart();
         })
         .catch(er => {
             console.log(er);
-
         });
 }
 
 function putCart(cart_item) {
+    console.log(cart_item);
+
     // call api
     var option = {
         "method": "PUT",
@@ -111,12 +110,13 @@ function putCart(cart_item) {
         },
         body: JSON.stringify(cart_item)
     }
-    fetch("http://localhost:3000/cart/" + toString(cart_item.id), option)
+    fetch("http://localhost:3000/cart/" + cart_item.id, option)
         .then(function (response) {
             return response.json();
         })
         .then(function (data) {
             alert("Đã thêm vào giỏ hàng")
+            getCart();
         })
         .catch(er => {
             console.log(er);
