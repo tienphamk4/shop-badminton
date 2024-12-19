@@ -12,7 +12,7 @@ body {
 .form-container {
     width: 90%;
     max-width: 600px;
-    background: #ff6600;
+    background: #fff;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -27,7 +27,7 @@ body {
 }
 
 h2 {
-    color: #ff6600;
+    color: #E95211;
     margin-bottom: 20px;
     text-align: center;
 }
