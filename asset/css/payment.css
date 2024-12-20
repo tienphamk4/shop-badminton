@@ -122,3 +122,9 @@ h2 {
         font-size: 12px;
     }
 }
+.invalid{
+    border:1px solid red;
+}
+.form-message{
+    color:red;
+}

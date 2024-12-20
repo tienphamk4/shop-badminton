@@ -5,9 +5,8 @@ var productApi = 'http://localhost:3000/products'
 var cartApi = 'http://localhost:3000/cart'
 var products;
 var cart;
-function getProduct(page) {
-    var pagination = productApi + "?_page=" + page + "&_per_page=9";
-    fetch(pagination)
+function getProduct(page, api) {
+    fetch(api)
         .then(function (response) {
             return response.json();
         })
@@ -18,7 +17,7 @@ function getProduct(page) {
         });
 
 }
-getProduct(1);
+getProduct(1, productApi + "?_page=" + 1 + "&_per_page=9");
 
 function getCart() {
     fetch(cartApi)
@@ -125,57 +124,91 @@ function putCart(cart_item) {
         });
 }
 // filter
+var condition = '';
 document.querySelector('.filter').onchange = function () {
-    var checkboxes = document.querySelectorAll('input[type=checkbox]:checked')
-    var select = document.querySelector('select')
-    var html = ''
-    var validProducts = []
-
-    // xu li select 
-    products.forEach(pro => {
-        var isMatchedProduct = filterByRange(pro, select.value)
-        if (isMatchedProduct) {
-            validProducts.push(pro);
-        }
-    })
-    function filterByRange(product, range) {
+    function filterByRange(range) {
         switch (range) {
             case 'duoi-1m':
-                return product.price < 1000000;
+                condition = '&price_lt=1000000';
+                break;
             case '1m-3m':
-                return product.price >= 1000000 && product.price <= 3000000;
+                condition = '&price_lte=3000000&price_gte=1000000'
+                break;
             case 'tren-3m':
-                return product.price > 3000000;
+                condition = '&price_gt=3000000'
+                break;
             default:
-                return true;
+                condition = ''
         }
     }
-    // xu li checkbox
-    if (checkboxes.length === 0) {
-        renderProduct(validProducts)
-        return;
-    }
-    validProducts.forEach(pro => {
+    function filterByType() {
         checkboxes.forEach(checked => {
-            if (pro.type === checked.value) {
-                html += `
-                    <div class="col-sm-6 col-md-6 col-lg-4 mb-4 item-${pro.id}">
-                        <div class="card position-relative">
-                            <a href="#" target="_self">
-                                <img src="${pro.image}" class="card-img-top" alt="Vợt cầu lông">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">${pro.name} </h5>
-                                    <p class="card-text">${pro.price}</p>
-                                    <button class="btn btn-primary btn-sm">Thêm vào giỏ</button>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    `
+            if (checked.value === 'vot') {
+                condition += '&type=vot'
+            }
+            if (checked.value === 'giay') {
+                condition += '&type=giay'
+            }
+            if (checked.value === 'trangphuc') {
+                condition += '&type=trangphuc'
+            }
+            if (checked.value === 'phukien') {
+                condition += '&type=phukien'
             }
         });
-    });
-    document.querySelector('.items').innerHTML = html;
+    }
+
+    var checkboxes = document.querySelectorAll('input[type=checkbox]:checked')
+    var select = document.querySelector('select')
+    var validProducts = []
+
+
+    filterByRange(select.value);
+    filterByType();
+
+    var api = productApi + "?_page=1&_per_page=9" + condition;
+    console.log(api);
+
+    // update lai trang hien tai
+    pages[currentIndex - 1].classList.remove('actived')
+    currentIndex = 1
+    pages[currentIndex - 1].classList.add('actived')
+
+    getProduct(1, api);
+    // // xu li select 
+    // products.forEach(pro => {
+    //     var isMatchedProduct = filterByRange(pro, select.value)
+    //     if (isMatchedProduct) {
+    //         validProducts.push(pro);
+    //     }
+    // })
+
+    // // xu li checkbox
+    // if (checkboxes.length === 0) {
+
+    //     return;
+    // }
+    // validProducts.forEach(pro => {
+    //     checkboxes.forEach(checked => {
+    //         if (pro.type === checked.value) {
+    //             html += `
+    //                 <div class="col-sm-6 col-md-6 col-lg-4 mb-4 item-${pro.id}">
+    //                     <div class="card position-relative">
+    //                         <a href="#" target="_self">
+    //                             <img src="${pro.image}" class="card-img-top" alt="Vợt cầu lông">
+    //                             <div class="card-body text-center">
+    //                                 <h5 class="card-title">${pro.name} </h5>
+    //                                 <p class="card-text">${pro.price}</p>
+    //                                 <button class="btn btn-primary btn-sm">Thêm vào giỏ</button>
+    //                             </div>
+    //                         </a>
+    //                     </div>
+    //                 </div>
+    //                 `
+    //         }
+    //     });
+    // });
+    // document.querySelector('.items').innerHTML = html;
 }
 
 // xu li phan trang
@@ -188,7 +221,8 @@ pages.forEach((page, index) => {
     page.addEventListener('click', () => {
         pages[currentIndex - 1].classList.remove('actived')
 
-        getProduct(index + 1)
+        var currentPage = index + 1;
+        getProduct(currentPage, productApi + "?_page=" + currentPage + "&_per_page=9" + condition)
         currentIndex = index + 1;
 
         pages[currentIndex - 1].classList.add('actived')
@@ -199,7 +233,7 @@ prev.addEventListener('click', () => {
         pages[currentIndex - 1].classList.remove('actived')
         currentIndex -= 1;
         pages[currentIndex - 1].classList.add('actived')
-        getProduct(currentIndex);
+        getProduct(currentIndex, productApi + "?_page=" + currentIndex + "&_per_page=9" + condition);
         console.log(currentIndex);
     }
 })
@@ -208,7 +242,9 @@ next.addEventListener('click', () => {
         pages[currentIndex - 1].classList.remove('actived')
         currentIndex += 1;
         pages[currentIndex - 1].classList.add('actived')
-        getProduct(currentIndex);
+        getProduct(currentIndex, productApi + "?_page=" + currentIndex + "&_per_page=9" + condition);
         console.log(currentIndex);
     }
+    console.log(condition);
+
 })

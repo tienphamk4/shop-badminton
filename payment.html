@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="asset/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="asset/css/reset.css">
     <link rel="stylesheet" href="asset/css/base.css">
-    <!-- <link rel="stylesheet" href="asset/css/payment.css"> -->
+    <link rel="stylesheet" href="asset/css/payment.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
@@ -99,33 +99,43 @@
     </nav>
     <div class="container mt-5">
         <div class="row">
-            <form class="col-12 col-md-6">
+            <form class="col-12 col-md-6" id="payment-form">
                 <div class="form-group">
                     <label for="name">Họ và tên người nhận hàng</label>
                     <input type="text" id="name" placeholder="Nhập họ và tên">
+                    <span class="form-message"></span>
+
                 </div>
                 <div class="form-group">
                     <label for="phone">Số điện thoại</label>
                     <input type="text" id="phone" placeholder="Nhập số điện thoại">
+                    <span class="form-message"></span>
+
                 </div>
                 <div class="form-group">
                     <label for="address">Địa chỉ</label>
                     <input type="text" id="address" placeholder="Nhập địa chỉ">
+                    <span class="form-message"></span>
+
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" id="email" placeholder="Nhập email">
+                    <span class="form-message"></span>
+
                 </div>
                 <div class="form-group">
                     <label for="notes">Ghi chú đơn hàng (tuỳ chọn)</label>
                     <textarea id="notes" placeholder="Nhập ghi chú"></textarea>
+                    <span class="form-message"></span>
+
                 </div>
             </form>
             <div class="col-12 col-md-6">
                 <div class="payment-options text-center">
-                    <button class="cod">Thanh toán khi nhận hàng (COD)</button>
-                    <button class="card">Thanh toán thẻ (Visa, MasterCard, JCB)</button>
-                    <button class="later">Mua trả chậm</button>
+                    <button class="cod" type="submit">Thanh toán khi nhận hàng (COD)</button>
+                    <button class="card" type="submit">Thanh toán thẻ (Visa, MasterCard, JCB)</button>
+                    <button class="later" type="submit">Mua trả chậm</button>
                 </div>
                 <div class="discounts">
                     <p>Giảm 5% cho đơn hàng từ 56K, sử dụng 2 lần/tháng.</p>
@@ -138,3 +148,28 @@
 </body>
 
 </html>
+
+<script src="asset/js/validator.js"></script>
+<script>
+    var option = {
+        form_id: '#payment-form',
+        rules: [
+            validator.isRequired('#name', 'Họ và tên không được để trống'),
+            validator.isRequired('#phone', 'Số điện thoại không được để trống'),
+            validator.isRequired('#address', 'Địa chỉ không được để trống'),
+            validator.isEmail('#email')
+        ]
+    }
+    validator(option)
+
+
+    // xu li event cho nut
+    var payment = document.querySelectorAll('button')
+    payment.forEach(function (item) {
+        item.onclick = function () {
+            alert("Đơn hàng đã được đặt thành công")
+            window.location.href = 'index.html'
+        }
+    })
+
+</script>
