@@ -1,0 +1,112 @@
+
+/* Làm cho sidebar luôn nằm cố định khi cuộn trang */
+aside {
+    position: sticky;
+    top: 20px;
+    z-index: 1;
+}
+
+/* Định dạng cho các icon liên hệ và giỏ hàng */
+.fixed-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999; /* Đảm bảo các icon luôn nằm trên các thành phần khác */
+}
+
+/* Định dạng cho từng icon */
+.fixed-icon {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 50px; /* Kích thước biểu tượng */
+    height: 50px;
+    border-radius: 50%; /* Bo góc hình tròn */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng đổ */
+    padding: 10px;
+    transition: transform 0.3s ease; /* Hiệu ứng hover */
+}
+h
+/* Hiệu ứng hover khi di chuột qua icon */WƯ
+.icon:hover {
+    transform: scale(1.1); /* Phóng to icon khi hover */
+}
+
+/* Đảm bảo rằng biểu tượng Zalo và giỏ hàng có khoảng cách đều */
+.fixed-icons a {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.product-header {
+    text-align: left; /* Căn dòng chữ về bên trái */
+    /* background-color: #e8e8e8; Màu nền nhẹ */
+    padding: 10px 20px; /* Khoảng cách bên trong */
+    border-bottom: 2px solid #ddd; /* Đường gạch ngang phía dưới */
+    margin-bottom: 20px; /* Khoảng cách với các sản phẩm */
+}
+
+.product-header h2 {
+    font-size: 25px; /* Kích thước chữ */
+    font-weight: bold; /* Đậm chữ */
+    color: #333; /* Màu chữ */
+    text-transform: uppercase; /* Chuyển thành chữ in hoa */
+    margin: 0; /* Loại bỏ khoảng cách mặc định */
+}
+
+/* Danh sách sản phẩm */
+.list-unstyled {
+    padding-left: 0;
+}
+
+.list-unstyled li {
+    margin-bottom: 20px;
+}
+
+.list-unstyled a {
+    color: #212529;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.list-unstyled li a:hover{
+    color:#E95221;
+}
+
+
+.author{
+    color:#47030346;
+}
+
+table {
+    margin-right: 30px;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+
+  .c-email a{
+    color:#E95221;
+  }
+
+  h4,h5{
+    font-weight: bold;
+  }
+
+  /* Đổi màu cho văn bản dẫn tới link */
+ .cl a{
+    color:#E95221;
+    text-decoration: none;
+}

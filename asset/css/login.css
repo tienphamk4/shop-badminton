@@ -109,7 +109,7 @@ h2{
 }
 .login-success, .login-failed{
     position: fixed;
-    top:81px;
+    top:131px;
     right:0;
     animation: move 3s ease-out; /* Áp dụng animation */
     opacity: 0;
