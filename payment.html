@@ -1,0 +1,140 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="asset/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/reset.css">
+    <link rel="stylesheet" href="asset/css/base.css">
+    <!-- <link rel="stylesheet" href="asset/css/payment.css"> -->
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <ul class="container">
+            <li class="col-lg-4 col-sm-6">
+                <a href="index.html">
+                    <i class="fa-solid fa-house"></i>
+                    Email: Tienbmt@badminton.vn
+                </a>
+            </li>
+            <li class="col-lg-5 col-sm-6">
+                <a href="index.html">
+                    <i class="fa-solid fa-phone"></i>
+                    Liên hệ ngay: 0395527082
+                </a>
+            </li>
+            <li class="col-lg-3 search">
+                <input type="text" class="form-control" placeholder="Tìm sản phẩm">
+            </li>
+        </ul>
+    </div>
+    <div class="menu">
+        <ul class="container container_menu">
+            <li class="bar hide">
+                <i class="fa-solid fa-bars"></i>
+            </li>
+            <li class="logo">
+                <a href="index.html">
+                    <img src="asset/img/logo.png" alt="">
+                </a>
+            </li>
+            <li class="item">
+                <a href="index.html">Trang chủ</a>
+            </li>
+            <li class="product item">
+                <a href="product.html">Sản phẩm</a>
+            </li>
+            <li class="item">
+                <a href="blog.html">Tin tức</a>
+            </li>
+            <li class="policy item">
+                <a href="policy.html">Chính sách</a>
+                <div class="dropdown hide">
+                    <a href="policy.html">Bảo mật</a>
+                    <a href="policy.html">Bảo hành</a>
+                    <a href="policy.html">Sử dụng</a>
+                </div>
+            </li>
+            <li class="item">
+                <a href="about.html">Giới thiệu</a>
+            </li>
+            <li class="item">
+                <a href="contact.html">Liên hệ</a>
+            </li>
+            <li class="cart">
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <a href="login.html">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </li>
+        </ul>
+        <div class="dropdown-bar hide">
+            <a href="index.html">Trang chủ</a>
+            <a href="product.html">Sản phẩm</a>
+            <a href="policy.html">Chính sách</a>
+            <a href="about.html">Giới thiệu</a>
+            <a href="contact.html">Liên hệ</a>
+        </div>
+    </div>
+
+    <nav aria-label="breadcrumb" class="nav">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                <li class="breadcrumb-item"><a href="#">Giỏ hàng</a></li>
+                <li class="breadcrumb-item active"><a href="#">Thanh toán</a></li>
+            </ol>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="row">
+            <form class="col-12 col-md-6">
+                <div class="form-group">
+                    <label for="name">Họ và tên người nhận hàng</label>
+                    <input type="text" id="name" placeholder="Nhập họ và tên">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Số điện thoại</label>
+                    <input type="text" id="phone" placeholder="Nhập số điện thoại">
+                </div>
+                <div class="form-group">
+                    <label for="address">Địa chỉ</label>
+                    <input type="text" id="address" placeholder="Nhập địa chỉ">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Nhập email">
+                </div>
+                <div class="form-group">
+                    <label for="notes">Ghi chú đơn hàng (tuỳ chọn)</label>
+                    <textarea id="notes" placeholder="Nhập ghi chú"></textarea>
+                </div>
+            </form>
+            <div class="col-12 col-md-6">
+                <div class="payment-options text-center">
+                    <button class="cod">Thanh toán khi nhận hàng (COD)</button>
+                    <button class="card">Thanh toán thẻ (Visa, MasterCard, JCB)</button>
+                    <button class="later">Mua trả chậm</button>
+                </div>
+                <div class="discounts">
+                    <p>Giảm 5% cho đơn hàng từ 56K, sử dụng 2 lần/tháng.</p>
+                    <p>Giảm 7% tối đa 700K, sử dụng 1 lần/tháng.</p>
+                    <p>Hạn mức trả góp lên tới 30,000,000 VNĐ với phí chỉ 2.5%.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
