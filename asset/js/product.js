@@ -5,18 +5,20 @@ var productApi = 'http://localhost:3000/products'
 var cartApi = 'http://localhost:3000/cart'
 var products;
 var cart;
-function getProduct() {
-    fetch(productApi)
+function getProduct(page) {
+    var pagination = productApi + "?_page=" + page + "&_per_page=9";
+    fetch(pagination)
         .then(function (response) {
             return response.json();
         })
         .then(function (data) {
-            products = data;
-            renderProduct(data)
+            products = data.data;
+
+            renderProduct(products)
         });
 
 }
-getProduct();
+getProduct(1);
 
 function getCart() {
     fetch(cartApi)
@@ -175,3 +177,38 @@ document.querySelector('.filter').onchange = function () {
     });
     document.querySelector('.items').innerHTML = html;
 }
+
+// xu li phan trang
+
+var pages = document.querySelectorAll('.pagination .number a');
+var prev = document.querySelector('.prev')
+var next = document.querySelector('.next')
+var currentIndex = 1;
+pages.forEach((page, index) => {
+    page.addEventListener('click', () => {
+        pages[currentIndex - 1].classList.remove('actived')
+
+        getProduct(index + 1)
+        currentIndex = index + 1;
+
+        pages[currentIndex - 1].classList.add('actived')
+    })
+})
+prev.addEventListener('click', () => {
+    if (currentIndex !== 1) {
+        pages[currentIndex - 1].classList.remove('actived')
+        currentIndex -= 1;
+        pages[currentIndex - 1].classList.add('actived')
+        getProduct(currentIndex);
+        console.log(currentIndex);
+    }
+})
+next.addEventListener('click', () => {
+    if (currentIndex < 5) {
+        pages[currentIndex - 1].classList.remove('actived')
+        currentIndex += 1;
+        pages[currentIndex - 1].classList.add('actived')
+        getProduct(currentIndex);
+        console.log(currentIndex);
+    }
+})

@@ -220,7 +220,23 @@ aside form button {
 .list-unstyled li a:hover{
     color:#E95221;
 }
+.pagination{
+    justify-content: right;
+    align-items: center;
+}
+.pagination a{
+    display: block;
+    font-size: 20px;
+    padding:20px;
+    color:#000;
+    transition: 0.3s;
+    cursor: pointer;
+}
 
+.actived{
+    background: var(--main-color);
+    color:#fff !important;
+}
 @media (max-width:768px) {
     .category{
         display: none;
