@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chi tiết sản phẩm</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="asset/css/base.css">
     <link rel="stylesheet" href="asset/css/reset.css">
     <link rel="stylesheet" href="asset/css/chi tiet vcl.css">
@@ -16,113 +15,89 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body style="background: #f0f1f5;">
-  
-    <body class="bg-light">
+<body>
 
-        <div class="header">
-            <ul class="container">
-                <li class="col-lg-4 col-sm-6">
-                    <a href="index.html">
-                        <i class="fa-solid fa-house"></i>
-                        Email: Tienbmt@badminton.vn
-                    </a>
-                </li>
-                <li class="col-lg-5 col-sm-6">
-                    <a href="index.html">
-                        <i class="fa-solid fa-phone"></i>
-                        Liên hệ ngay: 0395527082
-                    </a>
-                </li>
-                <li class="col-lg-3 search">
-                    <input type="text" class="form-control" placeholder="Tìm sản phẩm">
-                </li>
-            </ul>
-        </div>
-    
-        <div class="menu">
-            <ul class="container container_menu">
-                <li class="bar hide">
-                    <i class="fa-solid fa-bars"></i>
-                </li>
-                <li class="logo">
-                    <a href="index.html">
-                        <img src="asset/img/logo.png" alt="">
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="index.html">Trang chủ</a>
-                </li>
-                <li class="product item">
-                    <a href="product.html">Sản phẩm</a>
-                </li>
-                <li class="item">
-                    <a href="blog.html">Tin tức</a>
-                </li>
-                <li class="policy item">
-                    <a href="policy.html">Chính sách</a>
-                    <div class="dropdown hide">
-                        <a href="policy.html">Bảo mật</a>
-                        <a href="policy.html">Bảo hành</a>
-                        <a href="policy.html">Sử dụng</a>
-                    </div>
-                </li>
-                <li class="item">
-                    <a href="about.html">Giới thiệu</a>
-                </li>
-                <li class="item">
-                    <a href="contact.html">Liên hệ</a>
-                </li>
-                <li class="cart">
-                    <a href="cart.html">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </a>
-                    <a href="login.html">
-                        <i class="fa-solid fa-user"></i>
-                    </a>
-                </li>
-            </ul>
-            <div class="dropdown-bar hide">
+    <div class="header">
+        <ul class="container">
+            <li class="col-lg-4 col-sm-6">
+                <a href="index.html">
+                    <i class="fa-solid fa-house"></i>
+                    Email: Tienbmt@badminton.vn
+                </a>
+            </li>
+            <li class="col-lg-5 col-sm-6">
+                <a href="index.html">
+                    <i class="fa-solid fa-phone"></i>
+                    Liên hệ ngay: 0395527082
+                </a>
+            </li>
+            <li class="col-lg-3 search">
+                <input type="text" class="form-control" placeholder="Tìm sản phẩm">
+            </li>
+        </ul>
+    </div>
+
+    <div class="menu">
+        <ul class="container container_menu">
+            <li class="bar hide">
+                <i class="fa-solid fa-bars"></i>
+            </li>
+            <li class="logo">
+                <a href="index.html">
+                    <img src="asset/img/logo.png" alt="">
+                </a>
+            </li>
+            <li class="item">
                 <a href="index.html">Trang chủ</a>
+            </li>
+            <li class="product item">
                 <a href="product.html">Sản phẩm</a>
+            </li>
+            <li class="item">
+                <a href="blog.html">Tin tức</a>
+            </li>
+            <li class="policy item">
                 <a href="policy.html">Chính sách</a>
+                <div class="dropdown hide">
+                    <a href="policy.html">Bảo mật</a>
+                    <a href="policy.html">Bảo hành</a>
+                    <a href="policy.html">Sử dụng</a>
+                </div>
+            </li>
+            <li class="item">
                 <a href="about.html">Giới thiệu</a>
+            </li>
+            <li class="item">
                 <a href="contact.html">Liên hệ</a>
-            </div>
+            </li>
+            <li class="cart">
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <a href="login.html">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </li>
+        </ul>
+        <div class="dropdown-bar hide">
+            <a href="index.html">Trang chủ</a>
+            <a href="product.html">Sản phẩm</a>
+            <a href="policy.html">Chính sách</a>
+            <a href="about.html">Giới thiệu</a>
+            <a href="contact.html">Liên hệ</a>
         </div>
-    
-        <!-- Main Layout -->
-    
-
-
-
-  <script>
-$(document).ready(function() {
-    $('.pic').click(function() {
-        // Xóa viền màu cam cho tất cả ảnh
-        $('.pic').css('border', '1px solid black');
-
-        // Thêm viền màu vàng cho ảnh được click
-        $(this).css('border', '2px solid orange');
-    });
-});
-        </script>
-
+    </div>
     <!-- order -->
     <div class="order">
         <div class="container">
-            <div class="wrapper">
-                <div class="left">
+            <div class="row">
+                <div class="left col-sm-12 col-md-12 col-lg-6">
                     <div class="top">
-                           <img src="asset/img/Vợt FITEZY đen.webp" alt="vợt màu đen">  
+                        <img src="asset/img/Vợt FITEZY đen.webp" alt="vợt màu đen">
                     </div>
-                <div class=" bot">
-                    <img class="pic" src="asset/img/Vợt FITEZY đen.webp" alt="vợt màu đen">
-                    <img class="pic" src="asset/img/Vợt FITEZY xanh.webp" alt="vợt màu xanh">
-                    <img class="pic" src="asset/img/Vợt FITEZY hồng.webp" alt="vợt màu hồng">    
+
                 </div>
-                </div>
-                <div class="right">
+                <div class="right col-sm-12 col-md-12 col-lg-6">
                     <div class="right_name">
                         Vợt cầu lông FITEZY
                     </div>
@@ -143,7 +118,7 @@ $(document).ready(function() {
                     <div class="right_price">
                         <h3>95.000đ</h3>
                         <h4> Giá niêm yết: </h4>
-                        <h4 class="NY">  150.000đ </h4>
+                        <h4 class="NY"> 150.000đ </h4>
                     </div>
                     <div class="right_warranty">
                         <span>Chính sách trả hàng:</span>
@@ -170,14 +145,14 @@ $(document).ready(function() {
                         <button>
                             Xanh
                         </button>
-        
+
                     </div>
                     <div class="right_quantity">
                         <div>Số lượng</div>
                         <div class="control">
-                            
+
                             <input type="number" value="1">
-                        
+
                         </div>
                     </div>
                     <div class="right_btn">
@@ -202,27 +177,31 @@ $(document).ready(function() {
 
                     <h3>Thiết kế</h3>
                     <ul class="feature-list">
-                        <li>Vợt cầu lông Fitezy sở hữu thiết kế hiện đại, trẻ trung, phù hợp với nhiều đối tượng, đặc biệt là các bạn nữ.</li>
-                        <li>Tay cầm được thiết kế vừa vặn, tạo cảm giác thoải mái khi cầm nắm, giúp bạn kiểm soát vợt tốt hơn.</li>
+                        <li>Vợt cầu lông Fitezy sở hữu thiết kế hiện đại, trẻ trung, phù hợp với nhiều đối tượng,
+                            đặc biệt là các bạn nữ.</li>
+                        <li>Tay cầm được thiết kế vừa vặn, tạo cảm giác thoải mái khi cầm nắm, giúp bạn kiểm soát
+                            vợt tốt hơn.</li>
                         <li>Màu sắc đa dạng, tươi sáng, giúp bạn nổi bật trên sân.</li>
                     </ul>
-                
+
                     <h3>Chất liệu</h3>
                     <ul class="feature-list">
-                        <li>Khung vợt được làm từ chất liệu hợp kim cao cấp, siêu nhẹ, giúp bạn dễ dàng di chuyển và thực hiện các cú đánh mạnh mẽ.</li>
-                        <li>Mặt vợt được làm từ sợi carbon, tăng độ bền và độ đàn hồi, giúp bạn kiểm soát cầu tốt hơn.</li>
+                        <li>Khung vợt được làm từ chất liệu hợp kim cao cấp, siêu nhẹ, giúp bạn dễ dàng di chuyển và
+                            thực hiện các cú đánh mạnh mẽ.</li>
+                        <li>Mặt vợt được làm từ sợi carbon, tăng độ bền và độ đàn hồi, giúp bạn kiểm soát cầu tốt
+                            hơn.</li>
                     </ul>
-             
+
                     <h3>Cam kết</h3>
                     <ul class="feature-list">
-                  <li>Sản phẩm chính hãng 100%.</li>
-                  <li>Hoàn tiền nếu sản phẩm không giống mô tả.</li>
-                  <li>Giao hàng nhanh chóng trên toàn quốc.</li>
+                        <li>Sản phẩm chính hãng 100%.</li>
+                        <li>Hoàn tiền nếu sản phẩm không giống mô tả.</li>
+                        <li>Giao hàng nhanh chóng trên toàn quốc.</li>
                     </ul>
 
                     <h3>Xuất xứ</h3>
                     <ul class="feature-list">
-                  <li>Việt Nam.</li>
+                        <li>Việt Nam.</li>
                     </ul>
                 </div>
             </div>
@@ -233,43 +212,11 @@ $(document).ready(function() {
     <div class="vote">
         <div class="container">
             <div class="wrapper">
-                <h2>Đánh giá sản phẩm</h2>
-                <div class="vote_filter">
-                    <div class="vote_filter_left">
-                        <h2>4.7
-                            <span>trên 5</span>
-                        </h2>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <div class="vote_filter_right">
-                        <button onclick="filter('all')">
-                            Tất cả
-                        </button>
-                        <button onclick="filter('5s')">
-                            5 sao
-                        </button>
-                        <button onclick="filter('4s')">
-                            4 sao
-                        </button>
-                        <button onclick="filter('3s')">
-                            3 sao
-                        </button>
-                        <button onclick="filter('2s')">
-                            2 sao
-                        </button>
-                        <button onclick="filter('1s')">
-                            1 sao
-                        </button>
-                    </div>
-                </div>
+                <h2 style="padding-top: 20px;border-top: 1px solid var(--main-color);">Đánh giá sản phẩm</h2>
 
                 <div class="vote_user" data-filter="5s">
                     <div class="vote_user_left">
-                        <img src="assets/image/jack.jpg" alt="">
+                        <img src="asset/img/avatar.webp" alt="">
                     </div>
                     <div class="vote_user_right">
                         <div>
@@ -293,7 +240,7 @@ $(document).ready(function() {
                 </div>
                 <div class="vote_user" data-filter="5s">
                     <div class="vote_user_left">
-                        <img src="assets/image/sp.jpg" alt="">
+                        <img src="asset/img/avatar.webp" alt="">
                     </div>
                     <div class="vote_user_right">
                         <div>
@@ -311,13 +258,13 @@ $(document).ready(function() {
                             <br>
                             Giá: quá rẻ <br>
                             Đúng với mô tả: đúng <br>
-                            Giao hàng nhanh 
+                            Giao hàng nhanh
                         </div>
                     </div>
                 </div>
                 <div class="vote_user" data-filter="5s">
                     <div class="vote_user_left">
-                        <img src="assets/image/st.webp" alt="">
+                        <img src="asset/img/avatar.webp" alt="">
                     </div>
                     <div class="vote_user_right">
                         <div>
@@ -341,7 +288,7 @@ $(document).ready(function() {
                 </div>
                 <div class="vote_user" data-filter="5s">
                     <div class="vote_user_left">
-                        <img src="assets/image/doran.webp" alt="">
+                        <img src="asset/img/avatar.webp" alt="">
                     </div>
                     <div class="vote_user_right">
                         <div>
@@ -357,7 +304,7 @@ $(document).ready(function() {
                         <div>
                             2023-06-01 08:55
                             <br>
-                            
+
                             Đúng với mô tả: đúng <br>
                             Giao hàng nhanh đóng hàng cẩn thận
                         </div>
@@ -365,7 +312,7 @@ $(document).ready(function() {
                 </div>
                 <div class="vote_user" data-filter="5s">
                     <div class="vote_user_left">
-                        <img src="assets/image/koma.webp" alt="">
+                        <img src="asset/img/avatar.webp" alt="">
                     </div>
                     <div class="vote_user_right">
                         <div>
@@ -389,7 +336,7 @@ $(document).ready(function() {
                 </div>
                 <div class="vote_user" data-filter="4s">
                     <div class="vote_user_left">
-                        <img src="assets/image/user.avif" alt="">
+                        <img src="asset/img/avatar.webp" alt="">
                     </div>
                     <div class="vote_user_right">
                         <div>
@@ -413,7 +360,7 @@ $(document).ready(function() {
                 </div>
                 <div class="vote_user" data-filter="4s">
                     <div class="vote_user_left">
-                        <img src="assets/image/user.avif" alt="">
+                        <img src="asset/img/avatar.webp" alt="">
                     </div>
                     <div class="vote_user_right">
                         <div>
@@ -436,12 +383,12 @@ $(document).ready(function() {
                 </div>
                 <div class="vote_user" data-filter="4s">
                     <div class="vote_user_left">
-                        <img src="assets/image/user.avif" alt="">
+                        <img src="asset/img/avatar.webp" alt="">
                     </div>
                     <div class="vote_user_right">
                         <div>
                             My Tho
-                        </div>  
+                        </div>
                         <div>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -459,7 +406,7 @@ $(document).ready(function() {
                 </div>
                 <div class="vote_user" data-filter="3s">
                     <div class="vote_user_left">
-                        <img src="assets/image/user.avif" alt="">
+                        <img src="asset/img/avatar.webp" alt="">
                     </div>
                     <div class="vote_user_right">
                         <div>
@@ -482,7 +429,7 @@ $(document).ready(function() {
                 </div>
                 <div class="vote_user" data-filter="2s">
                     <div class="vote_user_left">
-                        <img src="assets/image/user.avif" alt="">
+                        <img src="asset/img/avatar.webp" alt="">
                     </div>
                     <div class="vote_user_right">
                         <div>
@@ -601,19 +548,6 @@ $(document).ready(function() {
 
         </div>
     </div>
-
-
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- mys js -->
-    <script src="assets/js/header.js"></script>
-    <script src="assets/js/product_detail.js"></script>
-
-
-    
 </body>
 
 </html>

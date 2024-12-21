@@ -5,12 +5,6 @@
     overflow-y: hidden;
 }
 
-.order .wrapper{
-    background: #fff;
-    display: flex;
-    flex-wrap: wrap;
-    padding:20px;
-}
 
      .fa-star {
        color: gold; /* Change this to any color you prefer */
@@ -19,11 +13,10 @@
 
 .order .left{
     overflow: hidden;
-  width: 50%;
 }
 .order .top img{
     transition: 0.5s;
-    height: 70%;
+    height: 100%;
     margin: 16px;
 }
 .order .bot img{
@@ -49,7 +42,6 @@
 
 
 .order .right{
-    width: 40%;
     padding: 30px;
     padding-top: 0;
 }
@@ -57,6 +49,7 @@
     font-size: 28px;
     font-weight: 500;
     margin: 20px;
+    margin-left: 0;
 }
 .order .right_rating span{
     margin-right: 10px;
@@ -120,13 +113,13 @@
 .order .right_size button{
     border:none;
     outline: none;
-    width: 40px;
-    height: 40px;
+
     margin:0 10px;
     transition: 0.8s;
+    padding:10px 10px;
 }
 .order .right_size button:hover{
-    border: 1px solid var(--color-primary);
+    border: 1px solid var(--main-color); 
     background: white;
 }
 .order .right_quantity{
@@ -140,15 +133,26 @@
     width:50px;
     text-align: center;
 }
+.order .right_btn .right_btn_buy {
+    padding:10px 20px;
+    outline:none;
+    border:none;
+    background: var(--main-color);
+    border:1px solid var(--main-color);
+    color:#fff;
+    transition: 0.5s;
+}
+.order .right_btn .right_btn_buy:hover{
+    background: #fff;
+    color: var(--main-color);
+}
 .order .right_btn .right_btn_cart{
-    width: 200px;
-    background-color:#ffbc1c;
+    padding:10px 20px;
+    outline:none;
+    border:none;
 }
 .order .right_btn .right_btn_buy{
-    background: var(--color-primary);
-    background-color:#ff0000;
-    color:white;
-    margin-left: 20px;
+
 }
 .order button:focus{
     outline:none;
@@ -163,10 +167,12 @@ button{
     padding: 20px;
 }
 .detail h2{
-    background: #f8f8f8;
-    padding: 10px;
-    font-size: 24px;
+    color: black;
+    font-size: 30px;
     font-weight: 500;
+    margin-bottom: 20px;
+    border-top: 1px solid var(--main-color);
+    padding-top: 20px;
 }
 table{
     padding: 10px;
@@ -183,7 +189,9 @@ table tr td{
 .detail p{
     font-size: 16px;
 }
-
+.detail h3{
+    color:var(--main-color)
+}
 /* vote */
 .vote{
     margin: 20px 0;
@@ -203,9 +211,7 @@ table tr td{
     border:1px solid var(--color-gray);
     padding:30px;
 }
-.vote .vote_filter_left{
-    width: 20%;
-}
+
 .vote .vote_filter_left h2,.vote i{
     color: var(--color-primary);
     margin: 0;
@@ -213,9 +219,7 @@ table tr td{
 .vote .vote_filter_left h2 span{
     font-size: 20px;
 }
-.vote .vote_filter_right{
-    width: 80%;
-}
+
 .vote .vote_filter_right button{
     padding:5px 10px;
     margin: 0 10px;
@@ -270,6 +274,10 @@ table tr td{
     list-style-type: disc;
     padding-left: 20px;
     }
-.detail_desc h3{
-color:brown;
-    }
+
+img{
+    height: 100%;
+}
+.vote_user i{
+    color:#ffbc1c
+}
