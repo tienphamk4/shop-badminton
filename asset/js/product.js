@@ -36,7 +36,7 @@ function renderProduct(data) {
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-4 item-${product.id}">
                         <div class="card position-relative">
                             <a target="_self">
-                                <img src="${product.image}" class="card-img-top" alt="Vợt cầu lông">
+                                <img src="${product.image}" class="card-img-top" alt="Vợt cầu lông" onclick="window.location.href='detail.html'" style="cursor:pointer">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">${product.name} </h5>
                                     <p class="card-text">${product.price} VND</p>
@@ -170,8 +170,6 @@ document.querySelector('.filter').onchange = function () {
 
     var checkboxes = document.querySelectorAll('input[type=checkbox]:checked')
     var select = document.querySelector('select')
-    var validProducts = []
-
 
     filterByRange(select.value);
     filterByType();

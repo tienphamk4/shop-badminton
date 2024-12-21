@@ -95,6 +95,7 @@ function validator(option) {
             }, 2000)
         }
     }
+
     option.rules.forEach(rule => {
         var input = form.querySelector(rule.validId);
         console.log(rule.validId)

@@ -24,5 +24,18 @@ function updateCountdown() {
 const run = setInterval(updateCountdown, 1000);
 updateCountdown();
 
-// them vao gio hang
-
+// xu li click vao anh
+var imgs = document.querySelectorAll('.products img')
+imgs.forEach(img => {
+    img.style.cursor = 'pointer';
+    img.addEventListener('click', function () {
+        window.location.href = 'detail.html';
+    })
+})
+var imgs = document.querySelectorAll('.deal img')
+imgs.forEach(img => {
+    img.style.cursor = 'pointer';
+    img.addEventListener('click', function () {
+        window.location.href = 'detail.html';
+    })
+})
