@@ -25,7 +25,7 @@ function renderCart() {
         return;
     }
     html += ` <div class="item">
-                        <div class="cart_item row" style="color:var(--main-color)">
+                        <div class="cart_item row head" style="color:var(--main-color)">
                             <div class="col-lg-2 text-center">
                                 Ảnh
                             </div>

@@ -1,23 +1,22 @@
-
-
 // lay du lieu tu db fake
 var productApi = 'http://localhost:8080/products'
 var cartApi = 'http://localhost:8080/cart'
 var products;
 var cart;
 function getProduct(page, api) {
+
     fetch(api)
         .then(function (response) {
+
             return response.json();
         })
         .then(function (data) {
-            products = data.data;
-
+            products = data;
             renderProduct(products)
         });
 
 }
-getProduct(1, productApi + "?_page=" + 1 + "&_per_page=9");
+getProduct(1, productApi + "?_page=" + 1 + "&_limit=9");
 
 function getCart() {
     fetch(cartApi)
@@ -50,10 +49,21 @@ function renderProduct(data) {
     })
     document.querySelector('.items').innerHTML = html;
 }
+var allProduct;
+function getAllProduct() {
+    fetch(productApi)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            console.log(data);
 
+            allProduct = data;
+        });
+}
+getAllProduct();
 function handleAddToCart(id) {
-
-    var product = products.find(pro => {
+    var product = allProduct.find(pro => {
         return pro.id == id;
     })
 
@@ -82,7 +92,7 @@ function handleAddToCart(id) {
 function postCart(cart_item) {
     var option = {
         "method": "POST",
-        header: {
+        headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(cart_item)
@@ -106,7 +116,7 @@ function putCart(cart_item) {
     // call api
     var option = {
         "method": "PUT",
-        header: {
+        headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(cart_item)
@@ -129,13 +139,13 @@ document.querySelector('.filter').onchange = function () {
     function filterByRange(range) {
         switch (range) {
             case 'duoi-1m':
-                condition = '&price_lt=1000000';
+                condition = '&price_lte=1000000';
                 break;
             case '1m-3m':
                 condition = '&price_lte=3000000&price_gte=1000000'
                 break;
             case 'tren-3m':
-                condition = '&price_gt=3000000'
+                condition = '&price_gte=3000000'
                 break;
             default:
                 condition = ''
@@ -166,7 +176,7 @@ document.querySelector('.filter').onchange = function () {
     filterByRange(select.value);
     filterByType();
 
-    var api = productApi + "?_page=1&_per_page=9" + condition;
+    var api = productApi + "?_page=1&_limit=9" + condition;
     console.log(api);
 
     // update lai trang hien tai
@@ -188,7 +198,7 @@ pages.forEach((page, index) => {
         pages[currentIndex - 1].classList.remove('actived')
 
         var currentPage = index + 1;
-        getProduct(currentPage, productApi + "?_page=" + currentPage + "&_per_page=9" + condition)
+        getProduct(currentPage, productApi + "?_page=" + currentPage + "&_limit=9" + condition)
         currentIndex = index + 1;
 
         pages[currentIndex - 1].classList.add('actived')
@@ -199,7 +209,7 @@ prev.addEventListener('click', () => {
         pages[currentIndex - 1].classList.remove('actived')
         currentIndex -= 1;
         pages[currentIndex - 1].classList.add('actived')
-        getProduct(currentIndex, productApi + "?_page=" + currentIndex + "&_per_page=9" + condition);
+        getProduct(currentIndex, productApi + "?_page=" + currentIndex + "&_limit=9" + condition);
         console.log(currentIndex);
     }
 })
@@ -208,7 +218,7 @@ next.addEventListener('click', () => {
         pages[currentIndex - 1].classList.remove('actived')
         currentIndex += 1;
         pages[currentIndex - 1].classList.add('actived')
-        getProduct(currentIndex, productApi + "?_page=" + currentIndex + "&_per_page=9" + condition);
+        getProduct(currentIndex, productApi + "?_page=" + currentIndex + "&_limit=9" + condition);
         console.log(currentIndex);
     }
     console.log(condition);

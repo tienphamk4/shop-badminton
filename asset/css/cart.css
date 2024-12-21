@@ -60,4 +60,7 @@
     .remove{
         margin-top: 20px;
     }
+    .head{
+        display: none !important;
+    }
 }
