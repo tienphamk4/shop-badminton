@@ -1,0 +1,275 @@
+/* order */
+.order{
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.order .wrapper{
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    padding:20px;
+}
+
+     .fa-star {
+       color: gold; /* Change this to any color you prefer */
+   }
+
+
+.order .left{
+    overflow: hidden;
+  width: 50%;
+}
+.order .top img{
+    transition: 0.5s;
+    height: 70%;
+    margin: 16px;
+}
+.order .bot img{
+    transition: 0.5s;
+    height:15%;
+    width:22%;
+    margin:26px;
+    display: inline;
+    justify-content: space-between; /* Ví dụ: Căn đều các ảnh và có khoảng cách ở hai bên */
+    align-items: center; /* Căn giữa các ảnh theo chiều dọc */
+}
+.order img:hover{
+    transform: scale(1.1);
+}
+
+.bot img{
+    border: 1px solid black;
+}
+
+.bordered{
+    border: 3px solid orange; 
+}
+
+
+.order .right{
+    width: 40%;
+    padding: 30px;
+    padding-top: 0;
+}
+.order .right .right_name{
+    font-size: 28px;
+    font-weight: 500;
+    margin: 20px;
+}
+.order .right_rating span{
+    margin-right: 10px;
+}
+.order .right_rating i{
+    color:#ffbc1c
+}
+.order .right_rating i:last-child{
+    border-right: 2px solid #ddd;
+    padding-right: 5px;
+}
+.order .right_price{
+    color:red;
+    padding:15px;
+    margin: 10px 0;
+    background: #f8f8f8;
+    display: flex;
+    align-items: center;
+}
+.order .right_price h3{
+    margin-right: 50px;
+    font-size: 30px;
+    color: var(--color-primary)
+}
+
+.order .right_price h4{
+    color:grey;
+}
+
+.order .right_price .NY{
+    text-decoration: line-through;
+
+}
+.order .right_warranty{
+    margin: 20px 0;
+}
+.order .right_warranty span{
+    margin-right: 20px;
+}
+.order .right_delivery{
+    margin: 20px 0;
+}
+.order .right_delivery span{
+    margin-right: 20px;
+}
+.order .right_delivery i{
+    margin-right: 10px;
+}
+.order .right_rating i{
+    color:#ffbc1c
+}
+
+.order .right_delivery i{
+    color:green;
+}
+.order .right_size{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.order .right_size button{
+    border:none;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    margin:0 10px;
+    transition: 0.8s;
+}
+.order .right_size button:hover{
+    border: 1px solid var(--color-primary);
+    background: white;
+}
+.order .right_quantity{
+    display: flex;
+    margin: 20px 0;
+}
+.order .right_quantity .control{
+    margin-left: 40px;
+}
+.order .right_quantity input{
+    width:50px;
+    text-align: center;
+}
+.order .right_btn .right_btn_cart{
+    width: 200px;
+    background-color:#ffbc1c;
+}
+.order .right_btn .right_btn_buy{
+    background: var(--color-primary);
+    background-color:#ff0000;
+    color:white;
+    margin-left: 20px;
+}
+.order button:focus{
+    outline:none;
+}
+button{
+    cursor: pointer;
+}
+
+/* detail */
+.detail .wrapper{
+    background: #fff;
+    padding: 20px;
+}
+.detail h2{
+    background: #f8f8f8;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 500;
+}
+table{
+    padding: 10px;
+    display: block;
+}
+table tr{
+    line-height: 40px;
+    font-size: 16px;
+}
+table tr td{
+    display: inline-block;
+    width: 150px;
+}
+.detail p{
+    font-size: 16px;
+}
+
+/* vote */
+.vote{
+    margin: 20px 0;
+}
+.vote .wrapper{
+    background: #fff;
+    padding: 20px;
+}
+.vote h2{
+    font-weight: 400;
+}
+.vote .vote_filter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fffbf8;
+    border:1px solid var(--color-gray);
+    padding:30px;
+}
+.vote .vote_filter_left{
+    width: 20%;
+}
+.vote .vote_filter_left h2,.vote i{
+    color: var(--color-primary);
+    margin: 0;
+}
+.vote .vote_filter_left h2 span{
+    font-size: 20px;
+}
+.vote .vote_filter_right{
+    width: 80%;
+}
+.vote .vote_filter_right button{
+    padding:5px 10px;
+    margin: 0 10px;
+    border:none;
+}
+
+.vote .vote_filter_right button:focus{
+    border: 1px solid var(--color-primary);
+    outline:none
+}
+
+.vote .vote_user{
+    display: flex;
+    margin:20px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-gray);
+}
+.vote .vote_user_left{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+/* responsive */
+
+@media screen and (max-width: 850px){
+    .order .left{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .order .right{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .order .left{
+        width: 100%;
+    }
+    .order .right{
+        width: 100%;
+    }
+    .order .right_btn .right_btn_buy{
+        margin: 16px 0px;
+        width: 200px;
+
+    }
+}
+
+.feature-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    }
+.detail_desc h3{
+color:brown;
+    }
