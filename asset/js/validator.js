@@ -1,5 +1,5 @@
 // fetch api
-var userApi = ('http://localhost:3000/user')
+var userApi = ('http://localhost:8080/user')
 var users
 
 function fetchAllUsers() {

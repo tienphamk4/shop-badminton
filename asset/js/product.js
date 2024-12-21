@@ -1,8 +1,8 @@
 
 
 // lay du lieu tu db fake
-var productApi = 'http://localhost:3000/products'
-var cartApi = 'http://localhost:3000/cart'
+var productApi = 'http://localhost:8080/products'
+var cartApi = 'http://localhost:8080/cart'
 var products;
 var cart;
 function getProduct(page, api) {
@@ -87,7 +87,7 @@ function postCart(cart_item) {
         },
         body: JSON.stringify(cart_item)
     }
-    fetch("http://localhost:3000/cart", option)
+    fetch("http://localhost:8080/cart", option)
         .then(function (response) {
             return response.json();
         })
@@ -111,7 +111,7 @@ function putCart(cart_item) {
         },
         body: JSON.stringify(cart_item)
     }
-    fetch("http://localhost:3000/cart/" + cart_item.id, option)
+    fetch("http://localhost:8080/cart/" + cart_item.id, option)
         .then(function (response) {
             return response.json();
         })
@@ -175,40 +175,6 @@ document.querySelector('.filter').onchange = function () {
     pages[currentIndex - 1].classList.add('actived')
 
     getProduct(1, api);
-    // // xu li select 
-    // products.forEach(pro => {
-    //     var isMatchedProduct = filterByRange(pro, select.value)
-    //     if (isMatchedProduct) {
-    //         validProducts.push(pro);
-    //     }
-    // })
-
-    // // xu li checkbox
-    // if (checkboxes.length === 0) {
-
-    //     return;
-    // }
-    // validProducts.forEach(pro => {
-    //     checkboxes.forEach(checked => {
-    //         if (pro.type === checked.value) {
-    //             html += `
-    //                 <div class="col-sm-6 col-md-6 col-lg-4 mb-4 item-${pro.id}">
-    //                     <div class="card position-relative">
-    //                         <a href="#" target="_self">
-    //                             <img src="${pro.image}" class="card-img-top" alt="Vợt cầu lông">
-    //                             <div class="card-body text-center">
-    //                                 <h5 class="card-title">${pro.name} </h5>
-    //                                 <p class="card-text">${pro.price}</p>
-    //                                 <button class="btn btn-primary btn-sm">Thêm vào giỏ</button>
-    //                             </div>
-    //                         </a>
-    //                     </div>
-    //                 </div>
-    //                 `
-    //         }
-    //     });
-    // });
-    // document.querySelector('.items').innerHTML = html;
 }
 
 // xu li phan trang
