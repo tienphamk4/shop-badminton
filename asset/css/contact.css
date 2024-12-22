@@ -161,28 +161,81 @@
 /* send message */
 .message {
     background-color: #EEEEEE;
-    padding-bottom: 100px;
+    padding: 50px 20px; /* Thêm padding để căn chỉnh tổng thể */
+    border-radius: 8px; /* Làm tròn góc cho toàn bộ khối message */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm shadow nhẹ */
 }
 
-.message .form {
+.message .wrapper {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    max-width: 700px; /* Đặt chiều rộng tối đa của form */
+    margin: 0 auto; /* Căn giữa form */
 }
 
-.message .form input,
-.message .form textarea {
-    width: 100%; /* Thay đổi width để form có thể co giãn */
+.message h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.message .form-group {
+    width: 100%; /* Đảm bảo form-group chiếm toàn bộ chiều ngang */
     max-width: 600px; /* Đặt chiều rộng tối đa */
+    margin-bottom: 20px; /* Tạo khoảng cách giữa các nhóm form */
+}
+
+.message .form-group label {
+    display: block;
+    margin-bottom: 8px; /* Khoảng cách giữa label và input */
+    font-weight: bold;
+    font-size: 14px;
+    color: #555;
+}
+
+.message .form-group input,
+.message .form-group textarea {
+    width: 100%; /* Chiều rộng full cho input và textarea */
+    padding: 12px 15px; /* Padding để nội dung thoáng hơn */
+    border: 1px solid #ddd; /* Đặt viền nhạt */
+    border-radius: 5px; /* Làm tròn góc cho các trường nhập liệu */
+    font-size: 14px; /* Cỡ chữ vừa phải */
+    color: #333;
+}
+
+.message .form-group textarea {
+    height: 150px; /* Đặt chiều cao cố định cho textarea */
+    resize: none; /* Ngăn chặn người dùng thay đổi kích thước textarea */
+}
+
+.message .form-group input:focus,
+.message .form-group textarea:focus {
+    border-color: #E74C3C; /* Màu viền khi focus */
+    outline: none; /* Loại bỏ viền mặc định */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3); /* Hiệu ứng shadow khi focus */
+}
+
+.message .btn-submit {
+    display: block; /* Đảm bảo nút là khối để dễ căn chỉnh */
+    width: 200px; /* Đặt chiều rộng cố định */
+    margin: 20px auto; /* Căn giữa nút bằng cách sử dụng margin auto */
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    font-size: 16px;
+    text-align: center; /* Đảm bảo nội dung căn giữa */
     border: none;
-    padding: 15px;
-    border-radius: 5px;
-    margin-bottom: 15px; /* Thêm khoảng cách giữa các trường nhập liệu */
+    border-radius: 5px; /* Làm tròn góc cho nút */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-.message .form textarea {
-    height: 150px;
+
+.message .btn-submit:hover {
+    background-color: #E74C3C;
 }
+
 
 /* Căn giữa button */
 .btn {

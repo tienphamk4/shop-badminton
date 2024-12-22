@@ -149,21 +149,41 @@
 
     <!-- send message -->
     <div class="message">
-        <div class="container">
-            <div class="row">
-                <div class="form col-12">
-                    <input type="text" placeholder="Name*"><br>
-                    <input type="text" placeholder="Subject"><br>
-                    <input type="email" placeholder="Email*"><br>
-                    <input type="text" placeholder="Phone"><br>
-                    <textarea placeholder="Message"></textarea>                    
+        <form action="" id="message-form">
+            <div class="wrapper">
+                
+                <div class="form-group">
+                    
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Nhập họ và tên">
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    
+                    <input type="text" id="subject" name="subject" class="form-control" placeholder="Nhập chủ đề">
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Nhập email">
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    
+                    <input type="text" id="phone" name="phone" class="form-control" placeholder="Nhập số điện thoại">
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    
+                    <textarea id="message" name="message" class="form-control" placeholder="Nhập nội dung tin nhắn"></textarea>
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn-submit">GỬI TIN NHẮN</button>
                 </div>
             </div>
-            <div class="btn">
-                <button>GỬI TIN NHẮN</button>
-            </div>
-        </div>
+        </form>
     </div>
+    
     <!-- send message -->
 
 
