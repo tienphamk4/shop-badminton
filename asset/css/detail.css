@@ -4,11 +4,15 @@
     overflow-x: hidden;
     overflow-y: hidden;
 }
+.order .right{
+    background: rgb(233,82,17,.9);
+    color:#fff;
+    border-radius: 15px;
+}
 
-
-     .fa-star {
-       color: gold; /* Change this to any color you prefer */
-   }
+.fa-star {
+    color: gold; /* Change this to any color you prefer */
+}
 
 
 .order .left{
@@ -46,8 +50,8 @@
     padding-top: 0;
 }
 .order .right .right_name{
-    font-size: 28px;
-    font-weight: 500;
+    font-size: 32px;
+    font-weight: 600;
     margin: 20px;
     margin-left: 0;
 }
@@ -68,11 +72,13 @@
     background: #f8f8f8;
     display: flex;
     align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
 }
 .order .right_price h3{
     margin-right: 50px;
     font-size: 30px;
-    color: var(--color-primary)
+    color: var(--color-primary);
 }
 
 .order .right_price h4{
@@ -81,7 +87,6 @@
 
 .order .right_price .NY{
     text-decoration: line-through;
-
 }
 .order .right_warranty{
     margin: 20px 0;
@@ -137,7 +142,8 @@
     padding:10px 20px;
     outline:none;
     border:none;
-    background: var(--main-color);
+    background: rgb(233,82,17,.9);
+    /* background: var(--main-color); */
     border:1px solid var(--main-color);
     color:#fff;
     transition: 0.5s;
@@ -152,6 +158,7 @@
     border:none;
 }
 .order .right_btn .right_btn_buy{
+    background: rgb(233,82,17,.9);
 
 }
 .order button:focus{
