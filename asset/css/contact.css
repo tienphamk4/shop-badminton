@@ -1,0 +1,241 @@
+
+/* infor */
+.infor {
+    padding-top: 60px;;
+    padding-bottom: 60px;
+}
+
+.infor-content {
+    margin:auto
+}
+.infor i {
+    color:#BBBBBB;
+}
+.infor span {
+    color: #BBBBBB;
+}
+
+.infor .location {
+    display: flex;
+    justify-content: center;
+}
+
+.infor .phone {
+    display: flex;
+    justify-content: center;
+}
+
+.infor .email {
+    display: flex;
+    justify-content: center;
+}
+
+.infor .location i {
+    margin-right: 15px;
+    font-size: 27px;
+}
+
+.infor .phone i {
+    margin-right: 15px;
+    font-size: 27px;
+}
+
+.infor .email i {
+    margin-right: 15px;
+    font-size: 27px;
+}
+.infor .email a{
+    color:#BBBBBB
+}
+.infor .email a:hover{
+    color: #E74C3C;
+}
+
+/* google map */
+.google-map{
+}
+.map{
+    margin-bottom: 100px;
+}
+/* Cấu hình để map container sử dụng flexbox */
+.map.container {
+    display: flex;
+    justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+    align-items: center; /* Căn giữa nội dung theo chiều dọc */
+    width: 100%; /* Đảm bảo container chiếm toàn bộ chiều rộng */
+    height: 100%; /* Đảm bảo container có chiều cao đầy đủ */
+}
+
+/* Cấu hình cho phần tử chứa iframe (map-wrapper) */
+.map-wrapper {
+    width: 100%; /* Chiếm toàn bộ chiều rộng của container */
+    height: 450px; /* Đặt chiều cao của bản đồ */
+    position: relative;
+}
+
+/* Đảm bảo iframe phản hồi với các kích thước màn hình */
+.map-wrapper iframe {
+    width: 100%; /* Chiếm toàn bộ chiều rộng của phần tử chứa */
+    height: 100%; /* Chiếm toàn bộ chiều cao của phần tử chứa */
+    border: 0; /* Xóa viền của iframe */
+}
+
+/* Responsive cho các màn hình nhỏ */
+@media (max-width: 768px) {
+    .map-wrapper {
+        height: 300px; /* Giảm chiều cao cho các màn hình nhỏ */
+    }
+}
+
+
+/* google map */
+
+/* send message */
+.message {
+    background-color: #EEEEEE;
+    padding: 50px 20px; /* Thêm padding để căn chỉnh tổng thể */
+    border-radius: 8px; /* Làm tròn góc cho toàn bộ khối message */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm shadow nhẹ */
+}
+
+.message .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px; /* Đặt chiều rộng tối đa của form */
+    margin: 0 auto; /* Căn giữa form */
+}
+
+.message h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.message .form-group {
+    width: 100%; /* Đảm bảo form-group chiếm toàn bộ chiều ngang */
+    max-width: 600px; /* Đặt chiều rộng tối đa */
+    margin-bottom: 20px; /* Tạo khoảng cách giữa các nhóm form */
+}
+
+.message .form-group label {
+    display: block;
+    margin-bottom: 8px; /* Khoảng cách giữa label và input */
+    font-weight: bold;
+    font-size: 14px;
+    color: #555;
+}
+
+.message .form-group input,
+.message .form-group textarea {
+    width: 100%; /* Chiều rộng full cho input và textarea */
+    padding: 12px 15px; /* Padding để nội dung thoáng hơn */
+    border: 1px solid #ddd; /* Đặt viền nhạt */
+    border-radius: 5px; /* Làm tròn góc cho các trường nhập liệu */
+    font-size: 14px; /* Cỡ chữ vừa phải */
+    color: #333;
+}
+
+.message .form-group textarea {
+    height: 150px; /* Đặt chiều cao cố định cho textarea */
+    resize: none; /* Ngăn chặn người dùng thay đổi kích thước textarea */
+}
+
+.message .form-group input:focus,
+.message .form-group textarea:focus {
+    border-color: #E74C3C; /* Màu viền khi focus */
+    outline: none; /* Loại bỏ viền mặc định */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3); /* Hiệu ứng shadow khi focus */
+}
+
+.message .btn-submit {
+    display: block; /* Đảm bảo nút là khối để dễ căn chỉnh */
+    width: 200px; /* Đặt chiều rộng cố định */
+    margin: 20px auto; /* Căn giữa nút bằng cách sử dụng margin auto */
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    font-size: 16px;
+    text-align: center; /* Đảm bảo nội dung căn giữa */
+    border: none;
+    border-radius: 5px; /* Làm tròn góc cho nút */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.message .btn-submit:hover {
+    background-color: #E74C3C;
+}
+
+
+/* Căn giữa button */
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--main-color);
+    border:none
+}
+
+/* Media query cho màn hình nhỏ hơn 768px */
+@media (max-width: 768px) {
+
+    .form input, .form textarea {
+        padding: 8px;
+    }
+
+    .btn {
+        margin-top: 10px;
+    }
+
+    button {
+        width: 100%; /* Nút sẽ chiếm toàn bộ chiều rộng trên màn hình nhỏ */
+        padding: 12px 0;
+    }
+}
+
+/* Media query cho màn hình rất nhỏ (di động) */
+@media (max-width: 480px) {
+    .form input, .form textarea {
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 14px 0;
+        font-size: 16px;
+    }
+}
+/* Đặt viền màu đỏ khi click vào input hoặc textarea */
+.message .form input:focus,
+.message .form textarea:focus {
+    border: 1px solid red; /* Đặt viền đỏ */
+    outline: none; /* Loại bỏ outline mặc định */
+}
+
+
+/* send message */
+.message h2{
+    font-size: 30px;
+    color:var(--main-color)
+}
+.invalid{
+    border:1px solid red;
+}
+.form-message{
+    color:red;
+}

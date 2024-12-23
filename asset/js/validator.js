@@ -94,6 +94,10 @@ function validator(option) {
                 window.location.href = 'login.html'
             }, 2000)
         }
+        else if (isValid && option.form_id === '#message-form') {
+            alert('Gửi tin nhắn thành công! Vui lòng chờ phản hồi từ chúng tôi')
+            window.location.href = 'index.html'
+        }
     }
 
     option.rules.forEach(rule => {
