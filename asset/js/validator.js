@@ -16,7 +16,7 @@ fetchAllUsers();
 function handleCreateUser(newUser) {
     var option = {
         method: 'POST',
-        header: {
+        headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(newUser)
@@ -27,10 +27,11 @@ function handleCreateUser(newUser) {
         })
         .then(function (data) {
             console.log(data)
+            window.location.href = 'login.html'
         })
 }
 
-function authorize(data) {
+function checkUser(data) {
     var form = document.querySelector('form');
     var email = form.querySelector('#email').value;
     var password = form.querySelector('#password').value;
@@ -43,10 +44,41 @@ function authorize(data) {
             check = true;
         }
     })
+    console.log(data);
 
     return check;
 }
+function authorize() {
+    if (checkUser(users)) {
+        document.querySelector('.login-success').classList.remove('hide')
 
+        setTimeout(function () {
+            window.location.href = 'index.html'
+        }, 2000)
+    }
+    else {
+        document.querySelector('.login-failed').classList.remove('hide')
+        setTimeout(function () {
+            document.querySelector('.login-failed').classList.add('hide')
+        }, 4000)
+    }
+}
+function register() {
+    var name = document.querySelector('#name').value
+    var email = document.querySelector('#email').value
+    var password = document.querySelector('#password').value
+    var newUser = {
+        "id": users.length + 1,
+        "name": name,
+        "email": email,
+        "password": password
+    }
+
+    document.querySelector('.login-success').classList.remove('hide')
+    setTimeout(function () {
+        handleCreateUser(newUser);
+    }, 2000)
+}
 function validator(option) {
     var form = document.querySelector(option.form_id);
     // huy su kien mac dich khi bam nut
@@ -62,37 +94,10 @@ function validator(option) {
         // thuc hien redirect
         if (isValid && option.form_id === '#login-form') {
             // xac thuc nguoi dung
-            if (authorize(users)) {
-                document.querySelector('.login-success').classList.remove('hide')
-
-                setTimeout(function () {
-                    window.location.href = 'index.html'
-                }, 2000)
-            }
-            else {
-                document.querySelector('.login-failed').classList.remove('hide')
-                setTimeout(function () {
-                    document.querySelector('.login-failed').classList.add('hide')
-                }, 4000)
-            }
+            authorize();
         }
         else if (isValid && option.form_id === '#register-form') {
-            e.preventDefault();
-            var name = document.querySelector('#name').value
-            var email = document.querySelector('#email').value
-            var password = document.querySelector('#password').value
-            var newUser = {
-                "id": users.length + 1,
-                "name": name,
-                "email": email,
-                "password": password
-            }
-
-            document.querySelector('.login-success').classList.remove('hide')
-            setTimeout(function () {
-                handleCreateUser(newUser);
-                window.location.href = 'login.html'
-            }, 2000)
+            register();
         }
         else if (isValid && option.form_id === '#message-form') {
             alert('Gửi tin nhắn thành công! Vui lòng chờ phản hồi từ chúng tôi')

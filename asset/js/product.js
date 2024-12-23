@@ -3,6 +3,7 @@ var productApi = 'http://localhost:8080/products'
 var cartApi = 'http://localhost:8080/cart'
 var products;
 var cart;
+
 function getProduct(page, api) {
 
     fetch(api)
@@ -28,6 +29,16 @@ function getCart() {
         });
 }
 getCart();
+
+//  thực hiện xử lí ở chi tiết sp
+var btn_cart_detail = document.querySelector('.right_btn_cart')
+console.log(btn_cart_detail);
+
+btn_cart_detail.onclick = function () {
+    console.log("ok")
+    handleAddToCart(1);
+}
+// thực hiện xử lí ở trang product
 // render
 function renderProduct(data) {
     var html = '';
@@ -222,3 +233,5 @@ next.addEventListener('click', () => {
     console.log(condition);
 
 })
+
+

@@ -18,9 +18,26 @@
 .order .left{
     overflow: hidden;
 }
+.order .top{
+}
+.top .image{
+    display: flex;
+    flex-direction: column;
+    height:650px;
+
+}
+.img-display{
+    height: 75%;
+    overflow: hidden;
+}
+.img-display img{;
+}
+.img-select{
+    height: 25%;
+    display: flex;
+}
 .order .top img{
     transition: 0.5s;
-    height: 100%;
     margin: 16px;
 }
 .order .bot img{
@@ -292,3 +309,4 @@ img{
 .vote_user i{
     color:#ffbc1c
 }
+
