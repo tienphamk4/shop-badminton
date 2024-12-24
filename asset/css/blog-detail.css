@@ -49,6 +49,7 @@ th, td {
     flex-direction: column;
     align-items: center;
     margin-bottom: 40px ;
+    justify-content: space-between;
 }
 
 .bot .card img {

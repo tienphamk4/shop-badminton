@@ -58,13 +58,7 @@
     margin-bottom: 100px;
 }
 /* Cấu hình để map container sử dụng flexbox */
-.map.container {
-    display: flex;
-    justify-content: center; /* Căn giữa nội dung theo chiều ngang */
-    align-items: center; /* Căn giữa nội dung theo chiều dọc */
-    width: 100%; /* Đảm bảo container chiếm toàn bộ chiều rộng */
-    height: 100%; /* Đảm bảo container có chiều cao đầy đủ */
-}
+
 
 /* Cấu hình cho phần tử chứa iframe (map-wrapper) */
 .map-wrapper {

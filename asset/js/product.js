@@ -31,13 +31,18 @@ function getCart() {
 getCart();
 
 //  thực hiện xử lí ở chi tiết sp
-var btn_cart_detail = document.querySelector('.right_btn_cart')
-console.log(btn_cart_detail);
 
-btn_cart_detail.onclick = function () {
-    console.log("ok")
-    handleAddToCart(1);
+try {
+    var btn_cart_detail = document.querySelector('.right_btn_cart')
+    console.log(btn_cart_detail);
+    btn_cart_detail.onclick = function () {
+        console.log("ok")
+        handleAddToCart(1);
+    }
+} catch (error) {
+
 }
+
 // thực hiện xử lí ở trang product
 // render
 function renderProduct(data) {
