@@ -1,0 +1,155 @@
+.sec1{
+    width: 100%;
+    margin: 16px auto 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+.top-content{
+    color:white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.sec1 .left{
+   
+    width: 65%;
+   
+}
+.left .top{
+  
+    background-image: url(../img/news0.jpg);
+    background-size: cover;
+    max-height: 500px;
+    min-height: 70%;
+    
+}
+
+
+.left .card{
+    border: none;
+    border-bottom: 1px solid var(--main-color);
+}
+.left .bot{
+    display: flex;
+    justify-content:
+    space-between;
+    flex-wrap: wrap;
+}
+
+.bot .card{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.bot .card img {
+    width: 100%;
+    margin: 5px;
+    height:200px;
+    transition: 0.5s;
+}
+.bot .card p{
+    margin: 0px 5px;
+}
+
+.bot .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px ;
+}
+
+ .card a:hover i{
+    transition: transform 0.5s ease;
+    transform: translateX(13px);
+}
+ .card a:hover{
+   
+    color:red;
+}
+
+
+.sec1 .right{
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.right .card{
+    max-width: 100%;
+    display: flex; 
+    justify-content: flex-start; 
+    margin: 4px;
+    height: auto;
+    overflow: hidden;
+}
+
+
+.right .card img{
+    width: 100%;
+    height: 200px;
+    transition: 0.5s;
+    object-position: top;
+}
+.right .card p{
+    padding:10px;
+}
+.left .card p{
+    padding:10px;
+}
+.right{
+    font-size: 10px !important;
+}
+  
+  .right .card span {
+    display:inline-flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+
+    .card img:hover{
+    transform: scale(1.04);
+}
+.sec1 a{
+    color:var(--main-color)
+}
+.right .card{
+    border : none;
+    border-bottom: 1px solid var(--main-color);
+    margin-bottom: 10px;
+}
+@media (max-width: 992px){
+    .sec1 .left{
+        width: 100%;
+    }
+    .sec1 .right{
+        margin-top: 250px;
+        width:100%;
+        flex-direction: row;
+    }
+    .sec1{
+        margin-bottom: 100px;
+    }
+}
+@media (max-width: 568px) {
+    .sec1 .left{
+        width: 100%;
+        height: 400px;
+    }
+    .sec1 .bot .card{
+        width: 100%;
+    }
+    .sec1 .right{
+        margin-top: 920px;
+        width: 100%;
+    }
+
+}
