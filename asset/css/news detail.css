@@ -3,7 +3,9 @@
     margin: 16px 5% 0px;
     
 }
-
+table a{
+    color:var(--main-color) !important
+}
 p{
     margin: 0px 5% ;
 }
@@ -42,7 +44,7 @@ th, td {
 }
 
 .bot .card{
-    max-width: 33%;
+    width: 32%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,8 +52,8 @@ th, td {
 }
 
 .bot .card img {
-    width: 90%;
-    margin: 5%;
+    width: 100%;
+    margin-bottom: 20px;
     height: 350px;
 }
 .card a{
@@ -67,4 +69,25 @@ th, td {
 .bot .card a:hover{
    
     color:red;
+}
+.bot a{
+    color:var(--main-color);
+    margin-bottom: 10px;
+}
+.bot .card{
+    border : none;
+    border-bottom: 1px solid var(--main-color);
+    border-top: 1px solid var(--main-color);
+
+    margin-bottom: 70px;
+}
+
+
+@media (max-width: 568px) {
+    .bot .card{
+        width: 100%;
+    }
+    .bot{
+        flex-wrap: wrap;
+    }
 }
