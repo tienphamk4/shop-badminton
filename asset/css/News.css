@@ -1,0 +1,104 @@
+.sec1{
+    width: 95%;
+    margin: 16px auto 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+
+}
+.top-content{
+    color:white;
+    text-align: center;
+}
+
+.sec1 .left{
+   
+    width: 65%;
+   
+}
+.left .top{
+  
+    background-image: url(../img/news0.jpg);
+    background-size: cover;
+    max-height: 500px;
+    min-height: 70%;
+ 
+}
+
+
+
+.left .bot{
+    display: flex;
+    justify-content:
+    space-between;
+}
+
+.bot .card{
+    max-width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+}
+
+.bot .card img {
+    width: 90%;
+    margin: 5px;
+    height:200px;
+}
+.bot .card p{
+    margin: 0px 5px;
+}
+
+.bot .card{
+    max-width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px ;
+}
+
+ .card a:hover i{
+    transition: transform 0.5s ease;
+    transform: translateX(13px);
+}
+ .card a:hover{
+   
+    color:red;
+}
+
+
+.sec1 .right{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.right .card{
+    max-width: 90%;
+    display: flex; 
+    justify-content: flex-start; 
+    margin: 4px;
+}
+
+
+.right .card img{
+    width: 30%;
+    margin: 10px 5px;
+}
+
+.right{
+    font-size: 10px !important;
+}
+  
+  .right .card span {
+    display:inline-flex;
+    align-items: center;
+  }
+
+
+    img:hover{
+    transform: scale(1.04);
+}
