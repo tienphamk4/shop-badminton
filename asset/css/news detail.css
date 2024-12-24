@@ -60,7 +60,11 @@ th, td {
     transition: transform 0.8s ease;
 }
 
-.card a:hover{
-    transform: translateX(10px);
+.bot .card a:hover i{
+    transition: transform 0.5s ease;
+    transform: translateX(13px);
+}
+.bot .card a:hover{
+   
     color:red;
 }
