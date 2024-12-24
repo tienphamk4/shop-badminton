@@ -310,3 +310,30 @@ img{
     color:#ffbc1c
 }
 
+.img-display{
+    /* để ẩn đi các ảnh còn lại trong dãy ảnh */
+    overflow: hidden;
+}
+.img-showcase{
+    display: flex;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+.img-showcase{
+    width: 100%;
+}
+.img-select{
+    display: flex;
+    justify-content: space-between;
+}
+.img-item{
+    margin: 0.3rem;
+}
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3){
+    margin-right: 0;
+}
+.img-item:hover{
+    opacity: 0.8;
+}

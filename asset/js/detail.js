@@ -14,7 +14,7 @@ imgBtns.forEach((imgItem) => {
 function slideImage() {
     const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
 
-    document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
+    document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth - 100}px)`;
 }
 
 window.addEventListener('resize', slideImage);
@@ -46,7 +46,7 @@ colorButtons.forEach(button => {
 
     function slideImage() {
         const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
-        document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
+        document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth - 50}px)`;
     }
 
     window.addEventListener('resize', slideImage);
